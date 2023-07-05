@@ -1,9 +1,9 @@
-# Bridge-Documents
+# Cancel an order
 
-> Method: POST
+`Method: POST`
 
 
-> endpoint: api/v1/orders/cancel
+`endpoint: api/v1/orders/cancel`
 
 ````json
 {

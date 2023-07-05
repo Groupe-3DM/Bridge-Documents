@@ -4,9 +4,9 @@
 
 ### Base url
 
-https://brdgeapi.3-dm.com/api/v1
+`Product : https://brdgeapi.3-dm.com/api/v1`
 
-https://bridgeqa.3-dm.com/api/v1
+`QA : https://bridgeqa.3-dm.com/api/v1`
 
 
 ### Response structure

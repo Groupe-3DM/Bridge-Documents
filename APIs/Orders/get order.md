@@ -1,17 +1,17 @@
-# Bridge-Documents
+# Get a list of orders
 
-**searchable fields**
 
-> Method: GET
 
-> endpoint: api/v1/orders
+`Method: GET`
 
-> example: api/v1/orders?client_id=1234&order_number=abc_123&........
+`endpoint: api/v1/orders`
 
+`example: api/v1/orders?client_id=1234&order_number=abc_123&........`
+
+**searchable query fields**
 
 | Name             | Type                                          |
 |------------------|-----------------------------------------------|
-| id | number/array                                  | 
 | order_number| string                                        |
 | client_id| number/array                                  |
 | sku | string                                        |

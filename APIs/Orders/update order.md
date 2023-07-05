@@ -1,10 +1,11 @@
-# Bridge-Documents
-> method: PUT
+# Update an order
 
-> endpoint: api/v1/orders/{id}
+ `method: PUT`
+
+ `endpoint: api/v1/orders/{id}`
 
 
-** can't update order status id and order state.
+` * order status id and order state can not be updated.`
 
 ```json
 {
