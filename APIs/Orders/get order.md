@@ -6,6 +6,8 @@
 
 > endpoint: api/v1/orders
 
+> example: api/v1/orders?client_id=1234&order_number=abc_123&........
+
 
 | Name             | Type                                          |
 |------------------|-----------------------------------------------|

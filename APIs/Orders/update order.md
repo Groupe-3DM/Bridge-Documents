@@ -8,8 +8,6 @@
 
 ```json
 {
-  "client_id"                : "sometimes|exists:clients,id",
-  "order_number"             : "sometimes|string|max:".Constant::MAX_STRING_LENGTH,
   "order_date"               : "sometimes|date_format:Y-m-d H:i:s",
   "first_name"               : "sometimes|string|max:".Constant::MAX_STRING_LENGTH,
   "address1"                 : "sometimes|string|max:".Constant::MAX_STRING_LENGTH,
@@ -32,9 +30,7 @@
   "pick_up"                  : "sometimes|nullable|boolean",
   "inside_delivery"          : "sometimes|nullable|boolean",
   "lift_gate_required"       : "sometimes|nullable|boolean",
-  "process_date"             : "sometimes|nullable|date",
   "handling_priority"        : "sometimes|nullable|boolean",
-  "processing_priority"      : "sometimes|nullable|boolean",
   "temperature_control"      : "sometimes|nullable|in:0,1,2",
   "hazmat"                   : "sometimes|nullable|boolean",
   "appointment_required"     : "sometimes|nullable|boolean",
