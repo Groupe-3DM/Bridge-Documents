@@ -40,55 +40,121 @@
 
 ```json
 {
-    "success": true,
-    "message": "Operation has been successfully completed!",
-    "data": {
-        "current_page": 1,
-        "data": [
-         ...
-        ],
-        "first_page_url": ".../api/v1/orders?page=1",
-        "from": 1,
-        "last_page": 4,
-        "last_page_url": ".../api/v1/orders?page=4",
-        "links": [
-            {
-                "url": null,
-                "label": "&laquo; Previous",
-                "active": false
-            },
-            {
-                "url": "http://lara3dmapi.test/api/v1/orders?page=1",
-                "label": "1",
-                "active": true
-            },
-            {
-                "url": "http://lara3dmapi.test/api/v1/orders?page=2",
-                "label": "2",
-                "active": false
-            },
-            {
-                "url": "http://lara3dmapi.test/api/v1/orders?page=3",
-                "label": "3",
-                "active": false
-            },
-            {
-                "url": "http://lara3dmapi.test/api/v1/orders?page=4",
-                "label": "4",
-                "active": false
-            },
-            {
-                "url": "http://lara3dmapi.test/api/v1/orders?page=2",
-                "label": "Next &raquo;",
-                "active": false
-            }
-        ],
-        "next_page_url": ".../api/v1/orders?page=2",
-        "path": ".../api/v1/orders",
-        "per_page": 15,
-        "prev_page_url": null,
-        "to": 15,
-        "total": 48
-    }
+  "success": true,
+  "message": "Operation has been successfully completed!",
+  "data": {
+    "id": 242,
+    "client_id": 9999,
+    "order_number": "1041",
+    "internal_order": "9999-01",
+    "order_date": "2023-03-22 11:47:53",
+    "status": 1,
+    "order_status_id": 17,
+    "order_type_id": null,
+    "processing_type_id": null,
+    "parent_id": null,
+    "first_name": "test",
+    "last_name": "etst",
+    "email": "",
+    "company": "",
+    "telephone": "",
+    "address1": "328 Rue Avro",
+    "address2": "",
+    "address3": null,
+    "postal_code": "H9R 5W5",
+    "apt_num1": null,
+    "apt_num2": null,
+    "city": "Pointe-Claire",
+    "province_id": 612,
+    "country_id": 38,
+    "reference1": null,
+    "reference2": null,
+    "packing_slip_note": null,
+    "pick_up": 0,
+    "inside_delivery": 0,
+    "lift_gate_required": 0,
+    "ready": 1,
+    "is_master": 0,
+    "quantity_ordered": 0,
+    "quantity_in_process": 0,
+    "quantity_shipped": 0,
+    "quantity_backorder": 0,
+    "batch_id": null,
+    "process_date": null,
+    "deliver_by_date": null,
+    "handling_priority": 0,
+    "processing_priority": 0,
+    "temperature_control": null,
+    "hazmat": 0,
+    "appointment_required": 0,
+    "order_handling": 0,
+    "signature_required": 0,
+    "ambient_control": 0,
+    "air_ground_control": 0,
+    "ship_onpty3": 0,
+    "pty3_account": null,
+    "handling_instruction": null,
+    "dangerous_goods": 0,
+    "language_id": null,
+    "warehouse_id": null,
+    "carrier_id": null,
+    "service_id": null,
+    "packing_slips": null,
+    "note": null,
+    "custom_reference_no": null,
+    "tote_id": null,
+    "transaction": null,
+    "created_by": "Genming Zhao",
+    "updated_by": "Shopify integration",
+    "created_at": "2023-05-11T15:00:53.000000Z",
+    "updated_at": "2023-07-17T20:09:35.000000Z",
+    "label_provided": 0,
+    "shipping_label_file": null,
+    "tracking_number": null,
+    "created_by_name": null,
+    "client_po": null,
+    "carrier_service": null,
+    "picking_method_id": null,
+    "client_order_id": "5105233264835",
+    "proxpert_import_at": null,
+    "carrier": null,
+    "trackings": null,
+    "warehouse_name": "",
+    "client_name": "TEST",
+    "order_items": [
+      {
+        "id": 427,
+        "order_id": 242,
+        "item_id": 4273,
+        "descriptions": "New test sku 1",
+        "quantity_ordered": 1,
+        "sku": "NewTestSku1",
+        "lot": "",
+        "expiry_date": null,
+        "unit_value": "0.0000",
+        "order_item_status_id": 1,
+        "uom_type_id": 1,
+        "created_by": null,
+        "created_at": "2023-05-11T15:00:53.000000Z",
+        "sale_price": "0.00"
+      },
+      {
+        "id": 428,
+        "order_id": 242,
+        "item_id": 4274,
+        "descriptions": "New test sku 2",
+        "quantity_ordered": 1,
+        "sku": "NewTestSku2",
+        "lot": "",
+        "expiry_date": null,
+        "unit_value": "0.0000",
+        "order_item_status_id": 1,
+        "uom_type_id": 1,
+        "created_by": null,
+        "created_at": "2023-05-11T15:00:53.000000Z",
+        "sale_price": "0.00"
+      }
+    ]
+  }
 }
 ```
