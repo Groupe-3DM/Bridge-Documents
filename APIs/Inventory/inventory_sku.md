@@ -5,7 +5,7 @@
 
 ### Method: `GET`
 ### parameters:
-| Name        | Type      | mandatory |
+| Name        | Type      | Mandatory |
 |-------------|-----------|-----------|
 | client_id   | integer   | Y         |
 | sku         | string    | Y         |
