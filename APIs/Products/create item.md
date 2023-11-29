@@ -6,93 +6,93 @@
 
 ### Parameters
 
-| Name                                | Type    | Mandatory     |
-|-------------------------------------|---------|---------------|
-| client_id                           | integer | Y             |
-| sku                                 | string  |               |
-| item_type_id                        | integer | Y             |
-| supply_type_id                      | integer | Y             |
-| item_status_id                      | integer |               |
-| order_unit                          | integer |               |
-| length_class_id                     | integer |               |
-| weight_class_id                     | integer | Y             |
-| barcoded                            | boolean |               |
-| manufacturer_code                   | string  | Y             |
-| upc                                 | string  | Y             |
-| group                               | string  | Y             |
-| family                              | string  |               |
-| color                               | string  |               |
-| size                                | string  |               |
-| material                            | string  | Y             |
-| category                            | string  |               |
-| sub_category                        | string  |               |
-| department                          | string  |               |
-| sub_department                      | string  |               |
-| supplier_code                       | string  |               |
-| item_linguistic_id                  | integer |               |
-| season                              | string  |               |
-| year                                | integer |               |
-| supplier_id                         | integer |               |
-| quarantine_days                     | boolean |               |
-| pre_alert_days                      | integer |               |
-| low_level_warning                   | integer |               |
-| hazmat                              | boolean |               |
-| currency_id                         | string  |               |
-| cost                                | decimal |               |
-| kit_surcharge                       | boolean |               |
-| ambient                             | boolean |               |
-| cold_chain                          | boolean |               |
-| controlled                          | boolean |               |
-| restricted_access                   | boolean |               |
-| restricted_ecomm                    | boolean |               |
-| restricted_precursor                | boolean |               |
-| lot_expiry_needed                   | boolean |               |
-| serial_number                       | boolean |               |
-| air_ground_control                  | boolean |               |
-| measurements                        | array   | Y             |
-| measurements.*                      | array   | Y             |
-| measurements.*.quantity             | integer | Y             |
-| measurements.*.uom_type_id          | integer | Y             |
-| measurements.*.length               | decimal | Y             |
-| measurements.*.weight               | decimal | Y             |
-| measurements.*.width                | decimal | Y             |
-| measurements.*.height               | decimal | Y             |
-| measurements.*.barcode              | boolean | Y             |
-| measurements.*.description          | string  | Y             |
-| descriptions                        | array   | Y (size=2)    |
-| descriptions.*                      | array   | Y             |
-| descriptions.*.description          | string  | Y             |
-| descriptions.*.language_id          | integer | Y             |
-| kits                                | array   |               |
-| kits.*                              | array   | Y             |
-| kits.*.quantity                     | integer | Y             |
-| kits.*.child_item_id                | integer | Y             |
-| kits.*.mix_lot                      | boolean | Y             |
-| kits.*.lot_kit                      | boolean | Y             |
-| kits.*.populate_order               | boolean | Y             |
-| hazmats                             | array   | Y (if hazmat) |
-| hazmats.*                           | array   | Y             |
-| hazmats.*.un_number                 | string  | Y             |
-| hazmats.*.class                     | string  | Y             |
-| hazmats.*.packing_group             | string  | Y             |
-| hazmats.*.quantity                  | integer | Y             |
-| hazmats.*.description               | string  | Y             |
-| manufacturers                       | array   |               |
-| manufacturers.*                     | array   | Y             |
-| manufacturers.*.country_id          | integer | Y             |
-| manufacturers.*.original_country_id | integer | Y             |
-| manufacturers.*.province_id         | integer | Y             |
-| manufacturers.*.name                | string  | Y             |
-| manufacturers.*.postal_code         | string  | Y             |
-| manufacturers.*.code                | string  | Y             |
-| manufacturers.*.mid                 | string  | Y             |
-| manufacturers.*.phone               | string  | Y             |
-| manufacturers.*.city                | string  | Y             |
-| manufacturers.*.address1            | string  | Y             |
-| manufacturers.*.address2            | string  | Y             |
-| manufacturers.*.description         | string  | Y             |
-| manufacturers.*.sale_price          | decimal | Y             |
-| manufacturers.*.international_ship  | boolean | Y             |
+| Name                                | Type    | Mandatory              |
+|-------------------------------------|---------|------------------------|
+| client_id                           | integer | Y                      |
+| sku                                 | string  | Y                      |
+| item_type_id                        | integer | Y                      |
+| supply_type_id                      | integer |                        |
+| item_status_id                      | integer | Y                      |
+| order_unit                          | integer | Y                      |
+| length_class_id                     | integer | Y                      |
+| weight_class_id                     | integer | Y                      |
+| barcoded                            | boolean |                        |
+| manufacturer_code                   | string  |                        |
+| upc                                 | string  |                        |
+| group                               | string  |                        |
+| family                              | string  |                        |
+| color                               | string  |                        |
+| size                                | string  |                        |
+| material                            | string  |                        |
+| category                            | string  |                        |
+| sub_category                        | string  |                        |
+| department                          | string  |                        |
+| sub_department                      | string  |                        |
+| supplier_code                       | string  |                        |
+| item_linguistic_id                  | integer |                        |
+| season                              | string  |                        |
+| year                                | integer |                        |
+| supplier_id                         | integer |                        |
+| quarantine_days                     | boolean |                        |
+| pre_alert_days                      | integer |                        |
+| low_level_warning                   | integer |                        |
+| hazmat                              | boolean |                        |
+| currency_id                         | integer |                        |
+| cost                                | decimal |                        |
+| kit_surcharge                       | boolean |                        |
+| ambient                             | boolean |                        |
+| cold_chain                          | boolean |                        |
+| controlled                          | boolean |                        |
+| restricted_access                   | boolean |                        |
+| restricted_ecomm                    | boolean |                        |
+| restricted_precursor                | boolean |                        |
+| lot_expiry_needed                   | boolean |                        |
+| serial_number                       | boolean |                        |
+| air_ground_control                  | boolean |                        |
+| measurements                        | array   | Y                      |
+| measurements.*                      | array   | Y                      |
+| measurements.*.quantity             | integer | Y                      |
+| measurements.*.uom_type_id          | integer | Y                      |
+| measurements.*.length               | decimal | Y                      |
+| measurements.*.weight               | decimal | Y                      |
+| measurements.*.width                | decimal | Y                      |
+| measurements.*.height               | decimal | Y                      |
+| measurements.*.barcode              | boolean | Y                      |
+| measurements.*.description          | string  | Y                      |
+| descriptions                        | array   | Y (size=2)             |
+| descriptions.*                      | array   | Y                      |
+| descriptions.*.description          | string  | Y                      |
+| descriptions.*.language_id          | integer | Y                      |
+| kits                                | array   | Y (if item_type_id: 4) |
+| kits.*                              | array   | Y                      |
+| kits.*.quantity                     | integer | Y                      |
+| kits.*.child_item_id                | integer | Y                      |
+| kits.*.mix_lot                      | boolean | Y                      |
+| kits.*.lot_kit                      | boolean | Y                      |
+| kits.*.populate_order               | boolean | Y                      |
+| hazmats                             | array   | Y (if hazmat)          |
+| hazmats.*                           | array   | Y                      |
+| hazmats.*.un_number                 | string  | Y                      |
+| hazmats.*.class                     | string  | Y                      |
+| hazmats.*.packing_group             | string  | Y                      |
+| hazmats.*.quantity                  | integer | Y                      |
+| hazmats.*.description               | string  | Y                      |
+| manufacturers                       | array   |                        |
+| manufacturers.*                     | array   | Y                      |
+| manufacturers.*.country_id          | integer | Y                      |
+| manufacturers.*.original_country_id | integer | Y                      |
+| manufacturers.*.province_id         | integer | Y                      |
+| manufacturers.*.name                | string  | Y                      |
+| manufacturers.*.postal_code         | string  | Y                      |
+| manufacturers.*.code                | string  | Y                      |
+| manufacturers.*.mid                 | string  | Y                      |
+| manufacturers.*.phone               | string  | Y                      |
+| manufacturers.*.city                | string  | Y                      |
+| manufacturers.*.address1            | string  | Y                      |
+| manufacturers.*.address2            | string  | Y                      |
+| manufacturers.*.description         | string  | Y                      |
+| manufacturers.*.sale_price          | decimal | Y                      |
+| manufacturers.*.international_ship  | boolean | Y                      |
 
 # Response:
 
