@@ -3,10 +3,10 @@
 `endpoint: api/v1/login`
 ### Method: `POST`
 ### parameters:
-| Name     | Type   | mandatory |
-|----------|--------|---------|
-| email    | email  | Y       |
-| password | string | Y       |
+| Name     | Type   | Mandatory |
+|----------|--------|-----------|
+| email    | email  | Y         |
+| password | string | Y         |
 ```json
 
 ```
@@ -14,9 +14,9 @@
 
 ### Method: `POST`
 ### parameters:
-| Name     | Type   | mandatory |
-|----------|--------|---------|
-| email    | email  | Y       |
+| Name     | Type   | Mandatory |
+|----------|--------|-----------|
+| email    | email  | Y         |
 
 ```json
 
@@ -25,12 +25,12 @@
 
 ### Method: `POST`
 ### parameters:
-| Name                  | Type   | mandatory |
-|-----------------------|--------|---------|
-| email                 | email  | Y       |
-| token                 | string | Y       |
-| password              | string | Y       |
-| password-confirmation | string | Y       |
+| Name                  | Type   | Mandatory  |
+|-----------------------|--------|------------|
+| email                 | email  | Y          |
+| token                 | string | Y          |
+| password              | string | Y          |
+| password-confirmation | string | Y          |
 ```json
 {
   

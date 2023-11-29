@@ -5,10 +5,10 @@
 
 ### Method: `GET`
 ### parameters:
-| Name        | Type            | mandatory |
-|-------------|-----------------|---------|
-| client_id   | integer| Y       |
-| sku         | string | Y       |
+| Name        | Type      | mandatory |
+|-------------|-----------|-----------|
+| client_id   | integer   | Y         |
+| sku         | string    | Y         |
 
 * sku can be a string or strings separated by comma.
 

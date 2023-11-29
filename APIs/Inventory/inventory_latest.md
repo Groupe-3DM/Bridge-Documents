@@ -6,9 +6,9 @@
 `endpoint: api/v1/inventory/item/latest-modified`
 
 ### parameters:
-| Name        | Type            | mandatory |
-|-------------|-----------------|---------|
-| client_id   | integer| Y       |
+| Name        | Type      | mandatory  |
+|-------------|-----------|------------|
+| client_id   | integer   | Y          |
 
 
 # response

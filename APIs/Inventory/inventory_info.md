@@ -5,10 +5,10 @@
 
 ### Method: `GET`
 ### parameters:
-| Name             | Type    | mandatory |
-|------------------|---------|---------|
-| client_id        | integer | Y       |
-| quantity_type_id | integer | Y       |
+| Name             | Type    | Mandatory |
+|------------------|---------|-----------|
+| client_id        | integer | Y         |
+| quantity_type_id | integer | Y         |
 
 * `quantity_type endpoint: api/v1/quantity-types`
 
