@@ -33,7 +33,7 @@
 | processing_priority            | boolean |           |
 | handling_priority              | boolean |           |
 | hazmat                         | boolean |           |
-| appointment_required           | boolean | Y         |
+| appointment_required           | boolean |           |
 | dangerous_goods                | boolean |           |
 | carrier_id                     | integer |           |
 | service_id                     | integer |           |
@@ -49,7 +49,7 @@
 | order_items.*.uom_quantity_id  | integer | Y         |
 | order_items.*.item_id          | integer | Y         |
 | order_items.*.lot              | integer |           |
-| order_items.*.expiry_date      | integer |           |
+| order_items.*.expiry_date      | date    |           |
 | order_items.*.unit_value       | integer |           |
 
 
