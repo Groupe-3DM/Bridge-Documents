@@ -1,46 +1,45 @@
 # Auth
 
-**Data constraints(api/v1/login)**
+`endpoint: api/v1/login`
+### Method: `POST`
+### parameters:
+| Name     | Type   | mandatory |
+|----------|--------|---------|
+| email    | email  | Y       |
+| password | string | Y       |
+```json
+
+```
+`endpoint: api/v1/password/forgot-password`
+
+### Method: `POST`
+### parameters:
+| Name     | Type   | mandatory |
+|----------|--------|---------|
+| email    | email  | Y       |
+
+```json
+
+```
+`endpoint: api/v1/password/reset`
+
+### Method: `POST`
+### parameters:
+| Name                  | Type   | mandatory |
+|-----------------------|--------|---------|
+| email                 | email  | Y       |
+| token                 | string | Y       |
+| password              | string | Y       |
+| password-confirmation | string | Y       |
 ```json
 {
-  "email": "[required|string|email]",
-  "password": "[required|string]"
-}
-```
-**Data constraints(api/v1/password/forgot-password)**
-
-```json
-{
-  "email": "[required|string]"
-}
-```
-**Data constraints(api/v1/password/reset)**
-
-```json
-{
-  "email": "[required|string]",
-  "token": "[required|string]",
-  "password-confirmation": "[required|string]",
-  "password": "[required|string]"
-
-
+  
 }
 ```
 
-**Data constraints(api/v1/me)**
-```json
-{
-  "Authorization": "required|format: Bearer {token}"
-}
-```
+`endpoint: api/v1/me`
+
+### Method: `GET`
 
 
-**URL** 
 
-api/v1/login(POST)
-
-api/v1/me (GET)
-
-api/v1/password/reset(POST)
-
-api/v1/password/forgot-password(POST)
