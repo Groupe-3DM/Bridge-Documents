@@ -1,7 +1,4 @@
-# Bridge-Documents
-
 # Bridge API Documentation
-
 ### Base url
 
 `Product : https://brdgeapi.3-dm.com/api/v1`
