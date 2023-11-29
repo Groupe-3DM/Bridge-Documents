@@ -1,64 +1,59 @@
 # Update an order
 
- `method: PUT`
+`method: PUT`
 
- `endpoint: api/v1/orders/{id}`
+`endpoint: api/v1/orders/:id`
 
+### Parameters
 
-` * order status id and order state can not be updated.`
+| Name                           | Type    | Mandatory                          |
+|--------------------------------|---------|------------------------------------|
+| client_id                      | integer |                                    |
+| order_number                   | string  |                                    |
+| order_date                     | string  |                                    |
+| first_name                     | string  |                                    |
+| last_name                      | string  |                                    |
+| apt_num1                       | string  |                                    |
+| apt_num2                       | string  |                                    |
+| address1                       | string  |                                    |
+| address2                       | string  |                                    |
+| city                           | string  |                                    |
+| province_id                    | string  |                                    |
+| country_id                     | string  |                                    |
+| company                        | string  |                                    |
+| telephone                      | string  |                                    |
+| email                          | string  |                                    |
+| postal_code                    | string  |                                    |
+| reference1                     | string  |                                    |
+| reference2                     | string  |                                    |
+| packing_slip_note              | string  |                                    |
+| pick_up                        | boolean |                                    |
+| lift_gate_required             | boolean |                                    |
+| processing_priority            | boolean |                                    |
+| handling_priority              | boolean |                                    |
+| hazmat                         | boolean |                                    |
+| appointment_required           | boolean |                                    |
+| dangerous_goods                | boolean |                                    |
+| carrier_id                     | integer |                                    |
+| service_id                     | integer |                                    |
+| note                           | string  |                                    |
+| custom_reference_no            | string  |                                    |
+| deliver_by_date                | date    |                                    |
+| signature_required             | boolean |                                    |
+| ambient_control                | boolean |                                    |
+| air_ground_control             | boolean |                                    |
+| order_items                    | array   |                                    |
+| order_items.*                  | array   | Y if order_items exists in payload |
+| order_items.*.quantity_ordered | integer | same as above                      |
+| order_items.*.uom_quantity_id  | integer | same as above                      |
+| order_items.*.item_id          | integer | same as above                      |
+| order_items.*.lot              | integer |                                    |
+| order_items.*.expiry_date      | date    |                                    |
+| order_items.*.unit_value       | integer |                                    |
 
-### data body
-```json
-{
-  "order_date"               : "sometimes|date_format:Y-m-d H:i:s",
-  "first_name"               : "sometimes|string|max:".Constant::MAX_STRING_LENGTH,
-  "address1"                 : "sometimes|string|max:".Constant::MAX_STRING_LENGTH,
-  "postal_code"              : "sometimes|string|max:".Constant::MAX_STRING_LENGTH,
-  "city"                     : "sometimes|string|max:".Constant::MAX_STRING_LENGTH,
-  "province_id"              : "sometimes|exists:provinces,id",
-  "country_id"               : "sometimes|exists:countries,id",
-  "telephone"                : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "last_name"                : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "company"                  : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "email"                    : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "reference1"               : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "reference2"               : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "packing_slip_note"        : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "items"                    : "nullable|array",
-  "items.*"                  : "nullable|array",
-  "apt_num1"                 : "sometimes|string|nullable|max:".Constant::MAX_STRING_LENGTH,
-  "apt_num2"                 : "sometimes|string|nullable|max:".Constant::MAX_STRING_LENGTH,
-  "address2"                 : "sometimes|string|nullable|max:".Constant::MAX_STRING_LENGTH,
-  "pick_up"                  : "sometimes|nullable|boolean",
-  "inside_delivery"          : "sometimes|nullable|boolean",
-  "lift_gate_required"       : "sometimes|nullable|boolean",
-  "handling_priority"        : "sometimes|nullable|boolean",
-  "temperature_control"      : "sometimes|nullable|in:0,1,2",
-  "hazmat"                   : "sometimes|nullable|boolean",
-  "appointment_required"     : "sometimes|nullable|boolean",
-  "order_handling"           : "sometimes|nullable|boolean",
-  "handling_instruction"     : "sometimes|nullable|string|max:".Constant::MAX_TEXT_LENGTH,
-  "dangerous_goods"          : "sometimes|nullable|boolean",
-  "language_id"              : "sometimes|nullable|exists:languages,id",
-  "transaction"              : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "carrier_id"               : "sometimes|nullable|exists:carriers,id",
-  "carrier_service"          : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "service_id"               : "sometimes|nullable|exists:services,id",
-  "note"                     : "sometimes|nullable|string|max:".Constant::MAX_TEXT_LENGTH,
-  "custom_reference_no"      : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  " deliver_by_date"         : "sometimes|nullable|date_format:Y-m-d",
-  "signature_required"       : 'sometimes|nullable|boolean',
-  "ambient_control"          : 'sometimes|nullable|boolean',
-  "air_ground_control"       : 'sometimes|nullable|in:0,1,2',
-}
-```
-### data example:
-```json
-{
-  "last_name": "ShipXXX",
-  "email": "dddddd_new_email@gmail.com"
-}
-```
+* `updating order is available if  order_status id in (14 receiving , 1 received, 2 released, 12 backorder)`
+*  `master order can't be updated once it created`
+
 # Response
 
 ```json

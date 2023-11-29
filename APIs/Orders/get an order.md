@@ -1,11 +1,11 @@
 # Get an order
 
 
+
+
+`endpoint: api/v1/orders/:id`
+
 `Method: GET`
-
-`endpoint: api/v1/orders/{id}`
-
-
 
 # response
 
@@ -90,7 +90,6 @@
     "proxpert_import_at": null,
     "carrier": null,
     "trackings": null,
-    "logs": [],
     "warehouse_name": "",
     "client_name": "TEST",
     "order_items": [
