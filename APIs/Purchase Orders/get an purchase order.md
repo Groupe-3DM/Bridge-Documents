@@ -1,4 +1,4 @@
-# Retrieve details of a specific purchase order by ID
+# Retrieve a purchase order 
 
 
 `Method: GET`

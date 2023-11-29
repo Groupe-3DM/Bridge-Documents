@@ -1,21 +1,28 @@
-# Get a list of products
+# import purchase orders
 
+`endpoint: api/v1/import/purchase-orders`
 
+`Method: POST`
 
-`Method: GET`
+### Parameters
 
-`endpoint: api/v1/purchase-orders`
-
-**searchable query fields**
-
-| Name             | Type                                          |
-|------------------|-----------------------------------------------|
-| client_id| number/array                                  |
-| sku | string                                        |
-| sort_by | any of above field                            |
-| sort_order | DESC/ASC                                      |
-|limit| number(<200)                                  |
-|list| count/take/auto-complete (default: paginated) |
+| Name               | Type    | Mandatory |
+|--------------------|---------|-----------|
+| client_id          | integer | Y         |
+| shipping_method_id | integer | Y         |
+| warehouse_id       | integer | Y         |
+| supplier_id        | integer |           |
+| date_expected      | date    | Y         |
+| po_number          | string  | Y         |
+| sku                | string  | Y         |
+| quantity_expected  | integer | Y         |
+| uom_quantity_id    | integer | Y         |
+| lot                | string  |           |
+| expiry_date        | date    |           |
+| cost               | decimal |           |
+| currency_id        | date    | Y         |
+| subclient_id       | integer |           |
+| upc                | string  |           |
 
 # response
 
