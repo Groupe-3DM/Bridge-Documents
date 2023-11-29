@@ -2,7 +2,7 @@
 
  
 
- `endpoint: api/v1/orders/{id}`
+ `endpoint: api/v1/items/{id}`
 
   `Method: PUT`
 

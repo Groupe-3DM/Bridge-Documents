@@ -3,7 +3,7 @@
 
 `Method: GET`
 
-`endpoint: api/v1/item/:id`
+`endpoint: api/v1/items/:id`
 
 
 

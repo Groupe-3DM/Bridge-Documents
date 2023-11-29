@@ -3,7 +3,7 @@
 `Method: DELETE`
 
 
-`endpoint: api/v1/items/delete/:id`
+`endpoint: api/v1/items/:id`
 
 * `any internal activities(inventory, receiving, return, order...) related can not be deleted`
 
