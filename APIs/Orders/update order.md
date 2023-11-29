@@ -53,6 +53,7 @@
 
 * `updating order is available if  order_status id in (14 receiving , 1 received, 2 released, 12 backorder)`
 *  `master order can't be updated once it created`
+* `any updating execuation could lead to the creation of backorder` 
 
 # Response
 
