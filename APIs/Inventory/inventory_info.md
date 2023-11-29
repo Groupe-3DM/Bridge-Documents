@@ -12,7 +12,7 @@
 
 * `quantity_type endpoint: api/v1/quantity-types`
 
-`1 available 2 reserved 3 receiving 4 allocated 5 damaged 6 quarantine 7 returned 8 expired 9 on hold 10 others`
+* `1 available 2 reserved 3 receiving 4 allocated 5 damaged 6 quarantine 7 returned 8 expired 9 on hold 10 others`
 
 ### Response:
 
