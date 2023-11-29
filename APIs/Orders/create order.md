@@ -4,7 +4,6 @@
 
 `Method: POST`
 
-
 ### Parameters
 
 | Name                           | Type    | Mandatory |
@@ -52,13 +51,14 @@
 | order_items.*.expiry_date      | date    |           |
 | order_items.*.unit_value       | integer |           |
 
-
 # Response:
+
 ```json
 {
   "success": true,
   "message": "Operation has been successfully completed!",
   "data": {
+    "id": 341,
     "client_id": 1,
     "order_number": 1689625979,
     "order_date": "2023-09-09 11:11:11",
@@ -95,10 +95,7 @@
     "temperature_control": false,
     "dangerous_goods": false,
     "language_id": 1,
-    "warehouse_id": 12,
     "carrier_id": null,
-    "transaction": null,
-    "carrier_service": null,
     "service_id": null,
     "note": null,
     "custom_reference_no": null,
@@ -108,19 +105,9 @@
     "signature_required": false,
     "ambient_control": false,
     "air_ground_control": 0,
-    "ship_onpty3": false,
-    "pty3_account": null,
     "label_provided": false,
-    "tracking_number": null,
     "client_po": null,
     "status": 1,
-    "picking_method_id": 1,
-    "processing_type_id": 2,
-    "internal_order": "1-18",
-    "updated_at": "2023-07-17T20:32:59.000000Z",
-    "created_at": "2023-07-17T20:32:59.000000Z",
-    "id": 341,
-    "warehouse_name": "3DM - AVRO",
     "client_name": "Group 3-DM",
     "order_items": [
       {

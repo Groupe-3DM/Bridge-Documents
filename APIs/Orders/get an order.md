@@ -1,8 +1,5 @@
 # Get an order
 
-
-
-
 `endpoint: api/v1/orders/:id`
 
 `Method: GET`
@@ -62,8 +59,6 @@
     "signature_required": 0,
     "ambient_control": 0,
     "air_ground_control": 0,
-    "ship_onpty3": 0,
-    "pty3_account": null,
     "handling_instruction": null,
     "dangerous_goods": 0,
     "language_id": null,
@@ -73,24 +68,13 @@
     "packing_slips": null,
     "note": null,
     "custom_reference_no": null,
-    "tote_id": null,
-    "transaction": null,
-    "created_by": "Shopify integration",
-    "updated_by": "Shopify integration",
-    "created_at": "2023-06-03T01:28:01.000000Z",
-    "updated_at": "2023-07-06T00:25:37.000000Z",
     "label_provided": 0,
     "shipping_label_file": null,
     "tracking_number": null,
-    "created_by_name": null,
-    "client_po": null,
-    "carrier_service": null,
     "picking_method_id": null,
     "client_order_id": "5181111435459",
-    "proxpert_import_at": null,
     "carrier": null,
     "trackings": null,
-    "warehouse_name": "",
     "client_name": "TEST",
     "order_items": [
       {

@@ -1,15 +1,12 @@
 # delete an order
 
-`Method: DELETE`
-
 
 `endpoint: api/v1/orders/delete/:id`
-### data body
-````json
-{
-  "order_id": "required|exists:orders,id"
-}
-````
+
+`Method: DELETE`
+
+* `only if order status in (1 received, 2 released, 12 backorder, 14 receiving), can be deleted `
+* `during the processing order, contact CSR directly`
 # Response:
 
 ```json
