@@ -47,7 +47,6 @@
     "id": 242,
     "client_id": 9999,
     "order_number": "1041",
-    "internal_order": "9999-01",
     "order_date": "2023-03-22 11:47:53",
     "status": 1,
     "order_status_id": 17,

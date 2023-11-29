@@ -14,7 +14,6 @@
     "id": 326,
     "client_id": 9999,
     "order_number": "1112",
-    "internal_order": "9999-36",
     "order_date": "2023-05-31 11:31:38",
     "status": 0,
     "order_status_id": 14,
