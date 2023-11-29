@@ -10,7 +10,7 @@
 | client_id   | integer   | Y         |
 | sku         | string    | Y         |
 
-* sku can be a string or strings separated by comma.
+* `sku can be a string or strings separated by comma.`
 
 ### Response:
 

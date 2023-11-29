@@ -1,95 +1,58 @@
 # Create an order
 
+`endpoint: api/v1/orders`
+
 `Method: POST`
 
 
-`endpoint: api/v1/orders`
+### Parameters
 
-### data body
+| Name                           | Type    | Mandatory |
+|--------------------------------|---------|-----------|
+| client_id                      | integer | Y         |
+| order_number                   | string  |           |
+| order_date                     | string  | Y         |
+| first_name                     | string  | Y         |
+| last_name                      | string  |           |
+| apt_num1                       | string  |           |
+| apt_num2                       | string  |           |
+| address1                       | string  | Y         |
+| address2                       | string  |           |
+| city                           | string  | Y         |
+| province_id                    | string  | Y         |
+| country_id                     | string  | Y         |
+| company                        | string  |           |
+| telephone                      | string  |           |
+| email                          | string  |           |
+| postal_code                    | string  | Y         |
+| reference1                     | string  |           |
+| reference2                     | string  |           |
+| packing_slip_note              | string  |           |
+| pick_up                        | boolean |           |
+| lift_gate_required             | boolean |           |
+| processing_priority            | boolean |           |
+| handling_priority              | boolean |           |
+| hazmat                         | boolean |           |
+| appointment_required           | boolean | Y         |
+| dangerous_goods                | boolean |           |
+| carrier_id                     | integer |           |
+| service_id                     | integer |           |
+| note                           | string  |           |
+| custom_reference_no            | string  |           |
+| deliver_by_date                | date    |           |
+| signature_required             | boolean |           |
+| ambient_control                | boolean |           |
+| air_ground_control             | boolean |           |
+| order_items                    | array   | Y         |
+| order_items.*                  | array   | Y         |
+| order_items.*.quantity_ordered | integer | Y         |
+| order_items.*.uom_quantity_id  | integer | Y         |
+| order_items.*.item_id          | integer | Y         |
+| order_items.*.lot              | integer |           |
+| order_items.*.expiry_date      | integer |           |
+| order_items.*.unit_value       | integer |           |
 
-```json
-{
-  "client_id"                : "required|exists:clients,id",
-  "order_number"             : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "order_date"               : "required|date_format:Y-m-d H:i:s",
-  "first_name"               : "required|string|max:".Constant::MAX_STRING_LENGTH,
-  "address1"                 : "required|string|max:".Constant::MAX_TEXT_LENGTH,
-  "order_status_id"          : "sometimes|exists:order_statuses,id",
-  "order_stage_id"           : "sometimes|exists:order_stages,id",
-  "postal_code"              : "required|string|max:".Constant::MAX_STRING_LENGTH,
-  "city"                     : "required|string|max:".Constant::MAX_STRING_LENGTH,
-  "province_id"              : "required|exists:provinces,id",
-  "country_id"               : "required|exists:countries,id",
-  "telephone"                : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "last_name"                : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "company"                  : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "email"                    : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "reference1"               : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "reference2"               : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "packing_slip_note"        : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "items"                    : "required|array",
-  "items.*"                  : "required|array",
-  "items.*.quantity_ordered" : "required_with:items|integer|min:1",
-  "items.*.uom_type_id"      : "required_with:items|exists:uom_types,id",//each, box, or pallet.
-  "items.*.descriptions"     : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "items.*.lot"              : "sometimes|nullable|string|exists:receiving_items,lot|max:".Constant::MAX_STRING_LENGTH,
-  "items.*.unit_value"       : "sometimes|nullable|numeric|min:0|max:".Constant::MAX_NUM,
-  "items.*.sku"              : "nullable|exists:items,sku|max:".Constant::MAX_STRING_LENGTH,
-  "items.*.item_id"          : "required_without:items.*.sku|exists:items,id|max:".Constant::MAX_STRING_LENGTH,
-  "apt_num1"                 : "sometimes|string|nullable|max:".Constant::MAX_STRING_LENGTH,
-  "apt_num2"                 : "sometimes|string|nullable|max:".Constant::MAX_STRING_LENGTH,
-  "address2"                 : "sometimes|string|nullable|max:".Constant::MAX_STRING_LENGTH,
-  "pick_up"                  : "sometimes|nullable|boolean",
-  "inside_delivery"          : "sometimes|nullable|boolean",
-  "lift_gate_required"       : "sometimes|nullable|boolean",
-  "process_date"             : "sometimes|nullable|date",
-  "handling_priority"        : "sometimes|nullable|boolean",
-  "processing_priority"      : "sometimes|nullable|boolean",
-  "temperature_control"      : "sometimes|nullable|in:0,1,2",
-  "hazmat"                   : "sometimes|nullable|boolean",
-  "appointment_required"     : "sometimes|nullable|boolean",
-  "order_handling"           : "sometimes|nullable|boolean",
-  "handling_instruction"     : "sometimes|nullable|string|max:".Constant::MAX_TEXT_LENGTH,
-  "dangerous_goods"          : "sometimes|nullable|boolean",
-  "language_id"              : "sometimes|nullable|exists:languages,id",
-  "warehouse_id"             : "sometimes|nullable|exists:warehouses,id",
-  "transaction"              : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "carrier_id"               : "sometimes|nullable|exists:carriers,id",
-  "service_id"               : "sometimes|nullable|exists:services,id",
-  "note"                     : "sometimes|nullable|string|max:".Constant::MAX_TEXT_LENGTH,
-  "custom_reference_no"      : "sometimes|nullable|string|max:".Constant::MAX_STRING_LENGTH,
-  "deliver_by_date"          : "sometimes|nullable|date_format:Y-m-d",
-  "signature_required"       : 'sometimes|nullable|boolean',
-  "ambient_control"          : 'sometimes|nullable|boolean',
-  "air_ground_control"       : 'sometimes|nullable|in:0,1,2',
-  "ship_onpty3"              : 'sometimes|nullable|boolean',
-  "pty3_account"             : "sometimes|nullable|string|max:".Constant::MAX_TEXT_LENGTH,
-  "client_po"                : "sometimes|nullable|string|max:".Constant::MAX_TEXT_LENGTH,
-  "picking_method_id"        : "nullable|exists:picking_methods,id",
-  "processing_type_id"       : "nullable|exists:processing_types,id",
-}
-```
-### data example
 
-```json
-{
-    "client_id": 1,
-    "order_date": "2023-09-09 11:11:11",
-    "first_name": "jon",
-    "address1": "222 ave mntril",
-    "postal_code": "kkkk",
-    "city": "kkkkkkk",
-    "province_id": 121,
-    "country_id": 38,
-    "order_items": [
-         {
-             "item_id": 1,
-             "quantity_ordered": 1,
-             "uom_type_id":1
-         }
-    ]
-}
-```
 # Response:
 ```json
 {
