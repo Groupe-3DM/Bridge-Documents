@@ -76,11 +76,6 @@
     "lift_gate_required": 0,
     "ready": 1,
     "is_master": 0,
-    "quantity_ordered": 0,
-    "quantity_in_process": 0,
-    "quantity_shipped": 0,
-    "quantity_backorder": 0,
-    "batch_id": null,
     "process_date": null,
     "deliver_by_date": null,
     "handling_priority": 0,
@@ -102,13 +97,8 @@
     "custom_reference_no": null,
     "label_provided": 0,
     "shipping_label_file": null,
-    "client_po": null,
-    "carrier_service": null,
-    "picking_method_id": null,
     "client_order_id": "5105233264835",
-    "carrier": null,
     "trackings": null,
-   
     "client_name": "TEST",
     "order_items": [
       {
