@@ -3,13 +3,10 @@
 `Method: DELETE`
 
 
-`endpoint: api/v1/orders/delete/:id`
-### data body
-````json
-{
-  "order_id": "required|exists:orders,id"
-}
-````
+`endpoint: api/v1/items/delete/:id`
+
+* `any internal activities(inventory, receiving, return, order...) related can not be deleted`
+
 # Response:
 
 ```json
