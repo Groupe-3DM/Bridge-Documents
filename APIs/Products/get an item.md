@@ -1,4 +1,4 @@
-# Get an Item
+# Retrieve an Item
 
 
 `Method: GET`

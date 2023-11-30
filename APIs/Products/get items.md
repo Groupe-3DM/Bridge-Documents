@@ -1,4 +1,4 @@
-# Retrieve items with query builder
+# Retrieve a list of items with query builder
 
 `endpoint: api/v1/items`
 

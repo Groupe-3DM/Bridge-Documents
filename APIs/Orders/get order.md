@@ -1,4 +1,4 @@
-# Get a list of orders with query builder
+# Retrieve a list of orders with query builder
 
 `endpoint: api/v1/orders`
 

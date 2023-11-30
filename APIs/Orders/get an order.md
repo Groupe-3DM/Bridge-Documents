@@ -1,4 +1,4 @@
-# Get an order
+# Retrieve an order
 
 `endpoint: api/v1/orders/:id`
 
