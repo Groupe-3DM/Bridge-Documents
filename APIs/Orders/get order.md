@@ -4,38 +4,41 @@
 
 `Method: GET`
 
-
 **searchable query fields**
 
-| Name            | Type                                          |
-|-----------------|-----------------------------------------------|
-| order_number    | string                                        |
-| client_id       | integer/array                                 |
-| sku             | string  or separated by comma or array        |
-| first_name      | string                                        |
-| last_name       | string                                        |
-| telephone       | string                                        |
-| email           | string                                        |
-| company         | string                                        |
-| order_from      | date                                          |
-| order_to        | Date                                          |
-| arrival_from    | Date                                          |
-| arrival_to      | Date                                          |
-| postal_code     | string                                        |
-| country_id      | integer                                       |
-| province_id     | integer                                       | 
-| order_status_id | integer or separated by comma or array        |
-| status          | boolean                                       |
-| ready           | boolean                                       |
-| processing_type | number                                        |
-| sort_by         | any of above field                            |
-| sort_order      | DESC/ASC                                      |
-| limit           | number(<200)                                  |
-| list            | count/take/auto-complete (default: paginated) |
+| Name            | Type                                              |
+|-----------------|---------------------------------------------------|
+| order_number    | string                                            |
+| client_id       | integer/array                                     |
+| sku             | string  or separated by comma or array            |
+| first_name      | string                                            |
+| last_name       | string                                            |
+| telephone       | string                                            |
+| email           | string                                            |
+| company         | string                                            |
+| date_field      | string in (shipped_date,order_date,process_date ) |
+| start_date      | Date                                              |
+| end_date        | Date                                              |   
+| order_from      | date                                              |
+| order_to        | Date                                              |
+| arrival_from    | Date                                              |
+| arrival_to      | Date                                              |
+| postal_code     | string                                            |
+| country_id      | integer                                           |
+| province_id     | integer                                           | 
+| order_status_id | integer or separated by comma or array            |
+| status          | boolean                                           |
+| ready           | boolean                                           |
+| processing_type | number                                            |
+| sort_by         | any of above field                                |
+| sort_order      | DESC/ASC                                          |
+| limit           | number(<200)                                      |
+| list            | count/take/auto-complete (default: paginated)     |
 
-* maximum of limit < 200 per page.
-* list is keyword , its value could be in "count, take, auto-complete".
-* paginated data will give out if no flag of list. 
+* `query's example: date_field=shipped_date&start_date=2023-09-10&end_date=2023-09-20&limit=20&list=all`
+* `maximum of limit < 200 per page`
+* `list is keyword , its value could be in "count, take, auto-complete"`
+* `paginated data will give out if no flag of list`
 
 # response
 
