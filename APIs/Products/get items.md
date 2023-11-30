@@ -31,9 +31,10 @@
 | limit                | number(<200)                                  |
 | list                 | count/take/auto-complete (default: paginated) |
 
-* maximum of limit < 200 per page.
-* list is keyword , its value could be in "count, take, auto-complete".
-* paginated data will give out if no flag of list.
+* `query's example: sku=xxxx&item_status_id=1&limit=20&list=all`
+* `maximum of limit < 200 per page.`
+* `list is keyword , its value could be in "count, take, auto-complete".`
+* `paginated data will give out if no flag of list.`
 
 # response
 
