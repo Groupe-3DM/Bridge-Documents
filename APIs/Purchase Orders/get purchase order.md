@@ -1,10 +1,10 @@
 # Get a list of purchase orders with query builder
 
-`method: GET`
-
 `endpoint: api/v1/purchase-orders`
 
-### Parameters
+`method: GET`
+
+`searchable query fields`
 
 | Name                        | Type                                              |
 |-----------------------------|---------------------------------------------------|

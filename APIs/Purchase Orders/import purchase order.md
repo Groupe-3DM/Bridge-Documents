@@ -2,7 +2,7 @@
 
 `endpoint: api/v1/import/purchase-orders`
 
-`Method: POST`
+`method: POST`
 
 ### Parameters
 
@@ -24,7 +24,7 @@
 | subclient_id       | integer |           |
 | upc                | string  |           |
 
-# response
+### Response
 
 ```json
 {

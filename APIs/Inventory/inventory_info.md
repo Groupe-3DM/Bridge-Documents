@@ -3,8 +3,9 @@
 
 `endpoint: api/v1/inventories/item/info`
 
-### Method: `GET`
-### parameters:
+`method: GET`
+### Parameters
+
 | Name             | Type    | Mandatory |
 |------------------|---------|-----------|
 | client_id        | integer | Y         |

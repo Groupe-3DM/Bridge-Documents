@@ -2,9 +2,9 @@
 
 `endpoint: api/v1/orders`
 
-`Method: GET`
+`method: GET`
 
-**searchable query fields**
+`searchable query fields`
 
 | Name            | Type                                              |
 |-----------------|---------------------------------------------------|
@@ -40,7 +40,7 @@
 * `list is keyword , its value could be in "count, take, auto-complete"`
 * `paginated data will give out if no flag of list`
 
-# response
+# Response
 
 ```json
 {

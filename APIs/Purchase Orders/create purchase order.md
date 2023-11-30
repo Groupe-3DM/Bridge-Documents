@@ -29,7 +29,7 @@
 | purchase_order_items.*.subclient_id      | integer |           |
 | purchase_order_items.*.upc               | integer |           |
 
-# response
+### Response
 
 ```json
 {
