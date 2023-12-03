@@ -1,32 +1,64 @@
 # Retrieve a list of receiving(s) with query builder.
 
-`endpoint: api/v1/items`
+### URL
 
-`method: GET`
+```text
+api/v1/receivings
+```
 
-**searchable query fields**
+### Method
 
-| Name                | Type                         |
-|---------------------|------------------------------|
-| client_id           | number/array                 |
-| asn                 | string                       |
-| receiving_status_id | integer                      |
-| arrival_date        | date                         |
-| arrival_time        | time                         |
-| sku                 | string                       |
-| appointment_id      | string                       |
-| sort_by             | any of above field           |
-| sort_order          | DESC/ASC                     |
-| limit               | number(<200)                 |
-| list                | all/count/take/auto-complete |
+```text
+GET
+```
 
+### Parameters
+
+| Name                | Type         | Required | Default | Description                  |
+|---------------------|--------------|----------|---------|------------------------------|
+| client_id           | number/array |          |         |                              |
+| asn                 | string       |          |         |                              |
+| receiving_status_id | integer      |          |         |                              |
+| arrival_date        | date         |          |         |                              |
+| arrival_time        | time         |          |         |                              |
+| sku                 | string       |          |         |                              |
+| appointment_id      | string       |          |         |                              |
+| sort_by             | string       |          |         | any of above field           |
+| sort_order          | string       |          |         | DESC/ASC                     |
+| limit               | integer      |          | 15      | max<200                      |
+| list                | string       |          |         | all/count/take/auto-complete |
+
+### Note
+
+```text
 * `query's example: asn=xxxx&receiving_status_id=1&limit=20&list=all`
 * `maximum of limit < 200 per page`
 * `list is keyword , its value could be in "count, take, auto-complete"`
 * `paginated data will give out if no flag of list`
 
+```
 
-### Response
+### Auth required
+
+```text
+Yes
+```
+
+### Headers
+
+```text
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer ******************
+```
+
+### Request example
+
+```json
+
+```
+
+### Success response
 
 ```json
 {

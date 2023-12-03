@@ -1,27 +1,61 @@
 # Retrieve a list of purchase orders with query builder
 
-`endpoint: api/v1/purchase-orders`
+### URL
 
-`method: GET`
+```text
+api/v1/items/:id
+```
 
-`searchable query fields`
+### Method
 
-| Name                        | Type                                              |
-|-----------------------------|---------------------------------------------------|
-| client_id                   | integer                                           |
-| supplier_id                 | integer                                           |
-| po_number                   | string                                            |
-| purchase_order_condition_id | integer                                           |
-| purchase_order_status_id    | integer                                           |
-| warehouse_id                | integer                                           |
-| sort_by                     | any of above field                                |
-| sort_order                  | DESC/ASC                                          |
-| limit                       | number(<200)                                      |
-| list                        | all/count/take/auto-complete (default: paginated) |
+```text
+GET
+```
 
-* `query's example: client_id=1&po_number=xxxx&limit=20&list=all`
+### Parameters
 
-# Response
+| Name                        | Type    | Required | Default | Description                                       |
+|-----------------------------|---------|----------|---------|---------------------------------------------------|
+| client_id                   | integer |          |         |                                                   |
+| supplier_id                 | integer |          |         |                                                   |
+| po_number                   | string  |          |         |                                                   |
+| purchase_order_condition_id | integer |          |         |                                                   |
+| purchase_order_status_id    | integer |          |         |                                                   |
+| warehouse_id                | integer |          |         |                                                   |
+| sort_by                     | string  |          |         | any of above field                                |
+| sort_order                  | string  |          |         | DESC/ASC                                          |
+| limit                       | integer |          | 15      | (<200)                                            |
+| list                        | string  |          |         | all/count/take/auto-complete (default: paginated) |
+
+
+
+### Note
+
+```text
+query's example: client_id=1&po_number=xxxx&limit=20&list=all
+```
+
+### Auth required
+
+```text
+Yes
+```
+
+### Headers
+
+```text
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer ******************
+```
+
+### Request example
+
+```json
+
+```
+
+### Success response
 
 ```json
 {

@@ -1,10 +1,49 @@
 # Retrieve details of a specific receiving record by ID
 
-`endpoint: api/v1/recevings/:id`
-`method: GET`
+### URL
 
+```text
+api/v1/receivings/:id
+```
 
-### Response
+### Method
+
+```text
+GET
+```
+### Parameters
+
+| Name               | Type    | Required | Default | Description       |
+|--------------------|---------|----------|---------|-------------------|
+
+### Note
+
+```text
+
+```
+
+### Auth required
+
+```text
+Yes
+```
+
+### Headers
+
+```text
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer ******************
+```
+
+### Request example
+
+```json
+
+```
+
+### Success response
+
 
 ```json
 {
