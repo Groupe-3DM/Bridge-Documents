@@ -40,7 +40,11 @@ Authorization: Bearer ******************
 ### Success example
 
 ```json
-
+{
+    "success": false,
+    "message": "Email could not be sent to this email address",
+    "data": []
+}
 ```
 
 

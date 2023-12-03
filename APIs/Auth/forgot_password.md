@@ -29,10 +29,16 @@ Accept: application/json
 
 ### Request example
 ```json
-
+{
+  "email": "your-email@domain.com"
+}
 ```
 ### Success response
 
 ```json
-
+{
+    "success": false,
+    "message": "Email could not be sent to this email address",
+    "data": []
+}
 ```
