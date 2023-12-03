@@ -14,18 +14,18 @@ GET
 
 ### Parameters
 
-| Name         | Type                                                           | Required | Default | Description                  |
-|--------------|----------------------------------------------------------------|----------|---------|------------------------------|
-| order_number | string                                                         |          |         |                              |
-| order_id     | integer                                                        |          |         |                              |
-| client_id    | integer                                                        |          |         |                              |
-| date_field   | string in ('created_at','ship_date','estimated_delivery_date') |          |         |                              |
-| start_date   | date                                                           |          |         |                              |
-| end_date     | date                                                           |          |         |                              |
-| sort_by      | string                                                         |          |         | any of above field           |
-| sort_order   | string                                                         |          |         | DESC/ASC                     |
-| limit        | integer                                                        |          | 15      | max<200                      |
-| list         | string                                                         |          |         | all/count/take/auto-complete |
+| Name         | Type    | Required | Default | Description                                  |
+|--------------|---------|----------|---------|----------------------------------------------|
+| order_number | string  |          |         |                                              |
+| order_id     | integer |          |         |                                              |
+| client_id    | integer |          |         |                                              |
+| date_field   | string  |          |         | created_at/ship_date/estimated_delivery_date |
+| start_date   | date    |          |         |                                              |
+| end_date     | date    |          |         |                                              |
+| sort_by      | string  |          |         | any of above field                           |
+| sort_order   | string  |          |         | DESC/ASC                                     |
+| limit        | integer |          | 15      | max<200                                      |
+| list         | string  |          |         | all/count/take/auto-complete                 |
 
 ### Note
 
