@@ -12,12 +12,12 @@ POST
 
 ### Parameters
 
-| Name                  | Type   | Required | Default | Description |
-|-----------------------|--------|----------|---------|-------------|
-| email                 | email  | Y        |         |             |
-| token                 | string | Y        |         |             |
-| password              | string | Y        |         |             |
-| password-confirmation | string | Y        |         |             |
+| Name                  | Type   | Required | Default | Description             |
+|-----------------------|--------|----------|---------|-------------------------|
+| email                 | email  | Y        |         |                         |
+| token                 | string | Y        |         | token in the email link |
+| password              | string | Y        |         |                         |
+| password-confirmation | string | Y        |         |                         |
 
 ### Auth required
 ```text
