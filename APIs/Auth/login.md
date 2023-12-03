@@ -74,7 +74,7 @@ Accept: application/json
       "status": 1,
       "department_id": 1,
       "employee": 1,
-      "job_title": developer",
+      "job_title": "developer", 
       "image": "male.png",
       "notes": "test",
       "dashboard": 0,
