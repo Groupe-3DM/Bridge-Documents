@@ -1,24 +1,61 @@
 # Retrieve order tracking information
 
-`endpoint: api/v1/order-packages`
-`method: GET`
+### URL
+
+```text
+api/v1/order-packages
+```
+
+### Method
+
+```text
+GET
+```
 
 ### Parameters
 
-------------------------------------------------------------------
+| Name         | Type                                                           | Required | Default | Description                  |
+|--------------|----------------------------------------------------------------|----------|---------|------------------------------|
+| order_number | string                                                         |          |         |                              |
+| order_id     | integer                                                        |          |         |                              |
+| client_id    | integer                                                        |          |         |                              |
+| date_field   | string in ('created_at','ship_date','estimated_delivery_date') |          |         |                              |
+| start_date   | date                                                           |          |         |                              |
+| end_date     | date                                                           |          |         |                              |
+| sort_by      | string                                                         |          |         | any of above field           |
+| sort_order   | string                                                         |          |         | DESC/ASC                     |
+| limit        | integer                                                        |          | 15      | max<200                      |
+| list         | string                                                         |          |         | all/count/take/auto-complete |
 
-| Name         | Type                                                           |
-|--------------|----------------------------------------------------------------|
-| order_number | string                                                         |
-| order_id     | integer                                                        |
-| client_id    | integer                                                        |
-| date_field   | string in ('created_at','ship_date','estimated_delivery_date') |
-| start_date   | date                                                           |
-| end_date     | date                                                           |
+### Note
 
-### Response
+```text
+* query's example: date_field=ship_date&start_date=2023-09-10&end_date=2023-09-20&limit=20&list=all
 
---------------------------------------------------------------
+* paginated data will give out if no flag of list
+```
+
+### Auth required
+
+```text
+Yes
+```
+
+### Headers
+
+```text
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer ******************
+```
+
+### Request example
+
+```json
+
+```
+
+### Success response
 
 ```json
 {
