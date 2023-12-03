@@ -21,7 +21,7 @@ POST
 
 ### Auth required
 ```text
-Yes
+NO
 ```
 
 ### Headers
