@@ -1,22 +1,46 @@
-# inventory info of sku 
+# inventory info of sku
 
+### URL
 
-`endpoint: api/v1/inventories/item/info`
+```text
+api/v1/inventories/item/info
+```
 
-`method: GET`
+### Method
+
+```text
+GET
+```
+
 ### Parameters
 
-| Name             | Type    | Mandatory |
-|------------------|---------|-----------|
-| client_id        | integer | Y         |
-| quantity_type_id | integer | Y         |
+| Name             | Type    | Required | Default | Description                                                                                |
+|------------------|---------|----------|---------|--------------------------------------------------------------------------------------------|
+| client_id        | integer | Y        |         |                                                                                            |
+| quantity_type_id | integer | Y        |         | 1 available 2 reserved 3 receiving 4 allocated 5 damaged 6 quarantine 7 returned 8 expired |
 
-* `quantity_type endpoint: api/v1/quantity-types`
+### Auth required
+```text
+Yes
+```
 
-* `1 available 2 reserved 3 receiving 4 allocated 5 damaged 6 quarantine 7 returned 8 expired 9 on hold 10 others`
 
-### Response:
+### Headers
+```text
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer ******************
+```
 
+
+
+### Request example
+
+```json
+
+```
+
+### Success Response
 ```json
 {
   "success": true,

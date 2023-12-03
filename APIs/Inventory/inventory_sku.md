@@ -1,18 +1,45 @@
 # inventory of sku details
 
+### URL
 
-`endpoint: api/v1/inventories/item/details`
+```text
+api/v1/inventories/item/details
+```
 
-### Method: `GET`
-### parameters:
-| Name        | Type      | Mandatory |
-|-------------|-----------|-----------|
-| client_id   | integer   | Y         |
-| sku         | string    | Y         |
+### Method
 
-* `sku can be a string or strings separated by comma.`
+```text
+GET
+```
 
-### Response:
+### Parameters
+
+| Name      | Type    | Required | Default | Description                          |
+|-----------|---------|----------|---------|--------------------------------------|
+| client_id | integer | Y        |         |
+| sku       | string  | Y        |         | string or strings separated by comma |
+
+### Auth required
+
+```text
+Yes
+```
+
+### Headers
+
+```text
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer ******************
+```
+
+### Request example
+
+```json
+
+```
+
+### Success Response
 
 ```json
 {

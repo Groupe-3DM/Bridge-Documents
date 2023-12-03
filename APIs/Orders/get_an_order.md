@@ -1,10 +1,50 @@
 # Retrieve an order
 
-`endpoint: api/v1/orders/:id`
+### URL
 
-`Method: GET`
+```text
+api/v1/orders/:id
+```
 
-# response
+### Method
+
+```text
+GET
+```
+
+### Parameters
+
+
+| Name                           | Type    | Required | Default | Description |
+|--------------------------------|---------|----------|---------|-------------|
+
+### Note
+```text
+
+```
+
+### Auth required
+
+```text
+Yes
+```
+
+### Headers
+
+```text
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer ******************
+```
+
+### Request example
+
+```json
+
+```
+
+### Success response
+
 
 ```json
 {

@@ -1,17 +1,43 @@
 # Latest modified Inventory
 
+### URL
+```text
+api/v1/inventory/item/latest-modified
+```
 
-`Method: GET`
+### Method
+```text
+GET
+```
 
-`endpoint: api/v1/inventory/item/latest-modified`
+### Parameters
 
-### parameters:
-| Name        | Type      | Mandatory |
-|-------------|-----------|-----------|
-| client_id   | integer   | Y         |
+| Name      | Type    | Required | Default | Description |
+|-----------|---------|----------|---------|-------------|
+| client_id | integer | Y        |
+
+### Auth required
+```text
+Yes
+```
 
 
-# response
+### Headers
+```text
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer ******************
+```
+
+
+
+### Request example
+
+```json
+
+```
+
+### Success Response
 
 ```json
 {
