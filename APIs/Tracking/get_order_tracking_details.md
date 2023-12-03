@@ -1,12 +1,9 @@
 # Retrieve order tracking information
 
-`endpoint: api/v1/order-packages/order/details`
-`method: GET`
-
 ### URL
 
 ```text
-api/v1/receivings
+api/v1/order-packages/order/details
 ```
 
 ### Method
@@ -112,43 +109,4 @@ Authorization: Bearer ******************
     }
   ]
 }
-```
-
-`endpoint: api/v1/orders/shipment/cost-estimated`
-`method: GET`
-
-### Parameters
-
-------------------------------------------------------------------
-
-| Name         | Type   |
-|--------------|--------|
-| order_number | string |
-
-### Response
-
---------------------------------------------------------------
-
-```json
-
-```
-
-----------------------------------------------------------------
-`endpoint: api/v1/orders/shipment/cost`
-`method: GET`
-
-### Parameters
-
-------------------------------------------------------------------
-
-| Name         | Type   |
-|--------------|--------|
-| order_number | string |
-
-### Response
-
---------------------------------------------------------------
-
-```json
-
 ```
