@@ -46,5 +46,11 @@ Authorization: Bearer ******************
 
 ### Success response
 ```json
-
+{
+    "success": true,
+    "message": "Operation has been successfully completed!",
+    "data": {
+        "cost": "8.89"
+    }
+}
 ```

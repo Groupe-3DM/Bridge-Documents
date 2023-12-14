@@ -3,7 +3,7 @@
 ### URL
 
 ```text
-api/v1/orders/shipment/cost_estimated
+api/v1/orders/shipment/cost-estimated
 ```
 
 ### Method
@@ -49,5 +49,11 @@ Authorization: Bearer ******************
 ### Success response
 
 ```json
-
+{
+    "success": true,
+    "message": "Operation has been successfully completed!",
+    "data": {
+        "cost": "8.89"
+    }
+}
 ```
