@@ -1,9 +1,9 @@
-# Retrieve order tracking information
+# Create a return label
 
 ### URL
 
 ```text
-api/v1/order-packages
+api/v1/admin/return-labels
 ```
 
 ### Method

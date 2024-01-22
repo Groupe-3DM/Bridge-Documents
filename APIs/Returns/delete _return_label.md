@@ -3,7 +3,7 @@
 ### URL
 
 ```text
-api/v1/admin/return-labelS/:id
+api/v1/admin/return-labels/:id
 ```
 
 ### Method
