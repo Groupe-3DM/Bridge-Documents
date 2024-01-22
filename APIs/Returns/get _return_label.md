@@ -16,8 +16,6 @@ GET
 
 ```text
 
-
-* paginated data will give out if no flag of list
 ```
 
 ### Auth required (Admin)
