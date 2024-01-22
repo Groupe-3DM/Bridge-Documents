@@ -3,7 +3,7 @@
 ### URL
 
 ```text
-api/v1/admin/return-labelS/:id
+api/v1/admin/return-labels/:id
 ```
 
 ### Method
@@ -14,21 +14,11 @@ DELETE
 
 ### Parameters
 
-| Name            | Type    | Required | Default | Description                                  |
-|-----------------|---------|----------|---------|----------------------------------------------|
-| tracking_number | string  |          |         |                                              |
-| order_id        | integer |          |         |                                              |
-| carrier_id      | integer |          |         |                                              |
-| sort_order      | string  |          |         | DESC/ASC                                     |
-| limit           | integer |          | 15      | max<200                                      |
-| list            | string  |          |         | all/count/take/auto-complete                 |
 
 ### Note
 
 ```text
 
-
-* paginated data will give out if no flag of list
 ```
 
 ### Auth required (Admin)
@@ -54,5 +44,9 @@ Authorization: Bearer ******************
 ### Success response
 
 ```json
-
+{
+  "success": true,
+  "message": "Operation has been successfully completed!",
+  "data": true
+}
 ```

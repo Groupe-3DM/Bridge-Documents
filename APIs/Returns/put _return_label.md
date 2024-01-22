@@ -25,8 +25,6 @@ PUT
 
 ```text
 
-
-* paginated data will give out if no flag of list
 ```
 
 ### Auth required (Admin)
@@ -60,6 +58,14 @@ Authorization: Bearer ******************
 {
   "success": true,
   "message": "Operation has been successfully completed!",
-  "data": true
+  "data": {
+    "id": 1,
+    "order_id": 26,
+    "carrier_id": 1,
+    "tracking_number": "333999333",
+    "label_url": "dateste",
+    "created_by": "Genming gggg",
+    "updated_by": "Genming gggg"
+  }
 }
 ```

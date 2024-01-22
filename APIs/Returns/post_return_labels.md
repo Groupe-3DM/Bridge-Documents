@@ -1,9 +1,9 @@
-# Retrieve order tracking information
+# Create a return label
 
 ### URL
 
 ```text
-api/v1/order-packages
+api/v1/admin/return-labels
 ```
 
 ### Method
@@ -16,17 +16,14 @@ GET
 
 | Name            | Type    | Required | Default | Description |
 |-----------------|---------|----------|---------|-------------|
-| tracking_number | string  |          |         | max<199     |
-| order_id        | integer |          |         |             |
-| carrier_id      | integer |          |         |             |
-| label_url       | string  |          |         | max<255     |
+| tracking_number | string  | yes      |         | max<199     |
+| order_id        | integer | yes      |         |             |
+| carrier_id      | integer | yes      |         |             |
+| label_url       | string  | yes      |         | max<255     |
 
 ### Note
 
 ```text
-* query's example: date_field=ship_date&start_date=2023-09-10&end_date=2023-09-20&limit=20&list=all
-
-* paginated data will give out if no flag of list
 ```
 
 ### Auth required
