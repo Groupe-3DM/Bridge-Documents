@@ -19,7 +19,7 @@ GET
 | start_date | date    | Yes      |         | Y-m-d    <br/>after:2023-04-07                                                 |
 | end_date   | date    | Yes      |         | Y-m-d    <br/>after_or_equal:start_date<br>before:tomorrow <br/>max:1(365)year |
 | client_id  | integer |          |         |                                                                                |
-| field      | string  | Yes      |         | "create","process","ship"                                                      |
+| date_field | string  | Yes      |         | "order_date","process_date","shipped_date"                                     |
 
 ### Note
 
