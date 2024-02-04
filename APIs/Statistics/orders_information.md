@@ -14,11 +14,11 @@ GET
 
 ### Parameters
 
-| Name       | Type    | Required | Default | Description |
-|------------|---------|----------|---------|-------------|
-| start_date | date    | Yes      |         | Y-m-d       |
-| end_date   | date    | Yes      |         | Y-m-d       |
-| client_id  | integer |          |         |             |
+| Name       | Type    | Required | Default | Description                                                                    |
+|------------|---------|----------|---------|--------------------------------------------------------------------------------|
+| start_date | date    | Yes      |         | Y-m-d    <br/>after:2023-04-07                                                 |
+| end_date   | date    | Yes      |         | Y-m-d    <br/>after_or_equal:start_date<br>before:tomorrow <br/>max:1(365)year |
+| client_id  | integer |          |         |                                                                                |
 
 ### Note
 
