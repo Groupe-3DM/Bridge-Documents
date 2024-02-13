@@ -23,8 +23,8 @@ POST
 | last_name                      | string  |          |         |             |
 | apt_num1                       | string  |          |         |             |
 | apt_num2                       | string  |          |         |             |
-| address1                       | string  | Y        |         |             |
-| address2                       | string  |          |         |             |
+| address1                       | string  | Y        |         |max 35 characters|
+| address2                       | string  |          |         |max 35 characters|
 | city                           | string  | Y        |         |             |
 | province_id                    | string  | Y        |         |             |
 | country_id                     | string  | Y        |         |             |
