@@ -16,7 +16,7 @@ POST
 
 | Name                           | Type         | Required                 | Default | Description                        |
 |--------------------------------|--------------|--------------------------|---------|------------------------------------|
-| client_id                      | integer      | Y                        |         | [APIs](../Clients/get_clients.md)  |
+| client_id                      | id           | Y                        |         | [APIs](../Clients/get_clients.md)  |
 | order_number                   | string       |                          |         |                                    |
 | order_date                     | string       | Y                        |         |                                    |
 | first_name                     | string       | Y                        |         |                                    |
@@ -40,8 +40,8 @@ POST
 | order_items                    | array        | Y                        |         |                                    |
 | order_items.*                  | array        | Y                        |         |                                    |
 | order_items.*.quantity_ordered | integer      | Y                        |         |                                    |
-| order_items.*.uom_quantity_id  | integer      | Y                        |         | [APIs](../Others/get_uom_types.md) |
-| order_items.*.item_id          | integer      |                          |         | [APIs](../Products/get_items.md)   |
+| order_items.*.uom_quantity_id  | id           | Y                        |         | [APIs](../Others/get_uom_types.md) |
+| order_items.*.item_id          | id           |                          |         | [APIs](../Products/get_items.md)   |
 | order_items.*.sku              | string       | Y if item_id not present |         |                                    |
 | order_items.*.lot              | string       |                          |         |                                    |
 | order_items.*.expiry_date      | date         |                          |         |                                    |
