@@ -16,7 +16,6 @@ PUT
 
 | Name                           | Type    | Required                           | Default | Description                        |
 |--------------------------------|---------|------------------------------------|---------|------------------------------------|
-| client_id                      | integer |                                    |         | [APIs](../Clients/get_clients.md)  |
 | order_number                   | string  |                                    |         |                                    |
 | order_date                     | string  |                                    |         |                                    |
 | first_name                     | string  |                                    |         |                                    |
