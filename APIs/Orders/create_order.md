@@ -14,50 +14,38 @@ POST
 
 ### Parameters
 
-| Name                           | Type    | Required | Default | Description |
-|--------------------------------|---------|----------|---------|-------------|
-| client_id                      | integer | Y        |         |             |
-| order_number                   | string  |          |         |             |
-| order_date                     | string  | Y        |         |             |
-| first_name                     | string  | Y        |         |             |
-| last_name                      | string  |          |         |             |
-| apt_num1                       | string  |          |         |             |
-| apt_num2                       | string  |          |         |             |
-| address1                       | string  | Y        |         |max 35 characters|
-| address2                       | string  |          |         |max 35 characters|
-| city                           | string  | Y        |         |             |
-| province_id                    | string  | Y        |         |             |
-| country_id                     | string  | Y        |         |             |
-| company                        | string  |          |         |             |
-| telephone                      | string  |          |         |             |
-| email                          | string  |          |         |             |
-| postal_code                    | string  | Y        |         |             |
-| reference1                     | string  |          |         |             |
-| reference2                     | string  |          |         |             |
-| packing_slip_note              | string  |          |         |             |
-| pick_up                        | boolean |          |         |             |
-| lift_gate_required             | boolean |          |         |             |
-| processing_priority            | boolean |          |         |             |
-| handling_priority              | boolean |          |         |             |
-| hazmat                         | boolean |          |         |             |
-| appointment_required           | boolean |          |         |             |
-| dangerous_goods                | boolean |          |         |             |
-| carrier_id                     | integer |          |         |             |
-| service_id                     | integer |          |         |             |
-| note                           | string  |          |         |             |
-| custom_reference_no            | string  |          |         |             |
-| deliver_by_date                | date    |          |         |             |
-| signature_required             | boolean |          |         |             |
-| ambient_control                | boolean |          |         |             |
-| air_ground_control             | boolean |          |         |             |
-| order_items                    | array   | Y        |         |             |
-| order_items.*                  | array   | Y        |         |             |
-| order_items.*.quantity_ordered | integer | Y        |         |             |
-| order_items.*.uom_quantity_id  | integer | Y        |         |             |
-| order_items.*.item_id          | integer | Y        |         |             |
-| order_items.*.lot              | integer |          |         |             |
-| order_items.*.expiry_date      | date    |          |         |             |
-| order_items.*.unit_value       | integer |          |         |             |
+| Name                           | Type    | Required | Default | Description      |
+|--------------------------------|---------|----------|---------|------------------|
+| client_id                      | integer | Y        |         | api/v1/clients   |
+| order_number                   | string  |          |         |                  |
+| order_date                     | string  | Y        |         |                  |
+| first_name                     | string  | Y        |         |                  |
+| last_name                      | string  |          |         |                  |
+| apt_num1                       | string  |          |         |                  |
+| apt_num2                       | string  |          |         |                  |
+| address1                       | string  | Y        |         |                  |
+| address2                       | string  |          |         |                  |
+| city                           | string  | Y        |         |                  |
+| province_id                    | string  | Y        |         | api/v1/provinces |
+| country_id                     | string  | Y        |         | api/v1/countries |
+| company                        | string  |          |         |                  |
+| telephone                      | string  |          |         |                  |
+| email                          | string  |          |         |                  |
+| postal_code                    | string  | Y        |         |                  |
+| reference1                     | string  |          |         |                  |
+| reference2                     | string  |          |         |                  |
+| note                           | string  |          |         |                  |
+| custom_reference_no            | string  |          |         |                  |
+| packing_slip_note              | string  |          |         |                  |
+| order_items                    | array   | Y        |         |                  |
+| order_items.*                  | array   | Y        |         |                  |
+| order_items.*.quantity_ordered | integer | Y        |         |                  |
+| order_items.*.uom_quantity_id  | integer | Y        |         |                  |
+| order_items.*.item_id          | integer | Y        |         | api/v1/items     |
+| order_items.*.lot              | integer |          |         |                  |
+| order_items.*.expiry_date      | date    |          |         |                  |
+| order_items.*.unit_value       | integer |          |         |                  |
+
 
 ### Note
 ```text
@@ -81,7 +69,37 @@ Authorization: Bearer ******************
 ### Request example
 
 ```json
-
+{
+    "client_id": 1,
+    "order_number": "1689625979",
+    "order_date": "2023-09-09 11:11:11",
+    "email": "test@email.com",
+    "first_name": "john",
+    "last_name": "Don",
+    "address1": "222 ave mntril",
+    "address2": "",
+    "province_id": 612,
+    "country_id": 38,
+    "city": "Montreal",
+    "telephone": null,
+    "company": null,
+    "postal_code": "H9R 3S4",
+    "note": null,
+    "custom_reference_no": null,
+    "client_po": null,
+    "reference1": null,
+    "reference2": null,
+    "order_items": [
+      {
+        "item_id": 1,
+        "quantity_ordered": 1,
+        "lot": "",
+        "expiry_date": null,
+        "unit_value": "0.0000",
+        "uom_type_id": 1
+      }
+    ]
+  }
 ```
 
 ### Success response
