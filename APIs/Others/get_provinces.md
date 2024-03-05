@@ -1,59 +1,21 @@
-# Retrieve a list of items with query builder
-
-`endpoint: api/v1/provinces`
-
-`Method: GET`
+# Retrieve a list of provinces with query builder
 
 ### URL
 
 ```text
-api/v1/items
+api/v1/provinces
 ```
 
 ### Method
 
 ```text
-POST
+GET
 ```
-
-
-
-| Name                 | Type                                          | Required | Default | Description |
-|----------------------|-----------------------------------------------|----------|---------|-------------|
-| client_id            | integer/array                                 |          |         |             |
-| sku                  | string  or separated by comma or array        |          |         |             |
-| upc                  | string                                        |          |         |             |
-| supplier_code        | string                                        |          |         |             |
-| item_status_id       | integer                                       |          |         |             |
-| supplier_id          | integer                                       |          |         |             |
-| item_type_id         | integer                                       |          |         |             |
-| ambient              | boolean                                       |          |         |             |
-| cold_chain           | boolean                                       |          |         |             |
-| restricted_access    | boolean                                       |          |         |             |
-| controlled           | boolean                                       |          |         |             |
-| hazmat               | boolean                                       |          |         |             |
-| restricted_pharma    | boolean                                       |          |         |             |
-| restricted_ecomm     | boolean                                       |          |         |             |
-| resctricted_precusor | boolean                                       |          |         |             |
-| description          | string                                        |          |         |             |
-| material             | string                                        |          |         |             |
-| supply_type_id       | integer                                       |          |         |             |
-| sort_by              | any of above field                            |          |         |             |
-| sort_order           | DESC/ASC                                      |          |         |             |
-| limit                | number(<200)                                  |          |         |             |
-| list                 | count/take/auto-complete (default: paginated) |          |         |             |
-
-
 ### Note
 
 ```text
-* `query's example: sku=xxxx&item_status_id=1&limit=20&list=all`
-* `maximum of limit < 200 per page.`
-* `list is keyword , its value could be in "count, take, auto-complete".`
-* `paginated data will give out if no flag of list.`
 
 ```
-
 ### Auth required
 
 ```text
