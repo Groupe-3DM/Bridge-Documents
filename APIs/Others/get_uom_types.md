@@ -3,7 +3,7 @@
 ### URL
 
 ```text
-api/v1/uom_types
+api/v1/uom-types
 ```
 
 ### Method
