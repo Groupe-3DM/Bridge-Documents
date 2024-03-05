@@ -23,8 +23,8 @@ POST
 | last_name                      | string  |          |         |                                    |
 | apt_num1                       | string  |          |         |                                    |
 | apt_num2                       | string  |          |         |                                    |
-| address1                       | string  | Y        |         |                                    |
-| address2                       | string  |          |         |                                    |
+| address1                       | string  | Y        |         |   max 35 characters                                 |
+| address2                       | string  |          |         |   max 35 characters                                 |
 | city                           | string  | Y        |         |                                    |
 | province_id                    | integer | Y        |         | [APIs](../Others/get_provinces.md) |
 | country_id                     | integer | Y        |         | [APIs](../Others/get_countries.md) |
@@ -42,7 +42,7 @@ POST
 | order_items.*.quantity_ordered | integer | Y        |         |                                    |
 | order_items.*.uom_quantity_id  | integer | Y        |         | [APIs](../Others/get_uom_types.md) |
 | order_items.*.item_id          | integer | Y        |         | [APIs](../Products/get_items.md)   |
-| order_items.*.lot              | integer |          |         |                                    |
+| order_items.*.lot              | string  |          |         |                                    |
 | order_items.*.expiry_date      | date    |          |         |                                    |
 | order_items.*.unit_value       | integer |          |         |                                    |
 
