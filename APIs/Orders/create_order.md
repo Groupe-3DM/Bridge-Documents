@@ -16,15 +16,15 @@ POST
 
 | Name                           | Type         | Required                 | Default | Description                        |
 |--------------------------------|--------------|--------------------------|---------|------------------------------------|
-| client_id                      | id           | Y                        |         | [APIs](../Clients/get_clients.md)  |
+| client_id                      | id           | Y                        |         |                                    |
 | order_number                   | string       |                          |         |                                    |
 | order_date                     | string       | Y                        |         |                                    |
 | first_name                     | string       | Y                        |         |                                    |
 | last_name                      | string       |                          |         |                                    |
 | apt_num1                       | string       |                          |         |                                    |
 | apt_num2                       | string       |                          |         |                                    |
-| address1                       | string       | Y                        |         |   max 35 characters                                 |
-| address2                       | string       |                          |         |   max 35 characters                                 |
+| address1                       | string       | Y                        |         | max 35 characters                  |
+| address2                       | string       |                          |         | max 35 characters                  |
 | city                           | string       | Y                        |         |                                    |
 | province_id                    | id/code/name | Y                        |         | [APIs](../Others/get_provinces.md) |
 | country_id                     | id/iso2      | Y                        |         | [APIs](../Others/get_countries.md) |
@@ -47,8 +47,8 @@ POST
 | order_items.*.expiry_date      | date         |                          |         |                                    |
 | order_items.*.unit_value       | integer      |                          |         |                                    |
 
-
 ### Note
+
 ```text
 
 ```
@@ -71,40 +71,39 @@ Authorization: Bearer ******************
 
 ```json
 {
-    "client_id": 1,
-    "order_number": "1689625979",
-    "order_date": "2023-09-09 11:11:11",
-    "email": "test@email.com",
-    "first_name": "john",
-    "last_name": "Don",
-    "address1": "222 ave mntril",
-    "address2": "",
-    "province_id": 612,
-    "country_id": 38,
-    "city": "Montreal",
-    "telephone": null,
-    "company": null,
-    "postal_code": "H9R 3S4",
-    "note": null,
-    "custom_reference_no": null,
-    "client_po": null,
-    "reference1": null,
-    "reference2": null,
-    "order_items": [
-      {
-        "item_id": 1,
-        "quantity_ordered": 1,
-        "lot": "",
-        "expiry_date": null,
-        "unit_value": "0.0000",
-        "uom_type_id": 1
-      }
-    ]
-  }
+  "client_id": 1,
+  "order_number": "1689625979",
+  "order_date": "2023-09-09 11:11:11",
+  "email": "test@email.com",
+  "first_name": "john",
+  "last_name": "Don",
+  "address1": "222 ave mntril",
+  "address2": "",
+  "province_id": 612,
+  "country_id": 38,
+  "city": "Montreal",
+  "telephone": null,
+  "company": null,
+  "postal_code": "H9R 3S4",
+  "note": null,
+  "custom_reference_no": null,
+  "client_po": null,
+  "reference1": null,
+  "reference2": null,
+  "order_items": [
+    {
+      "item_id": 1,
+      "quantity_ordered": 1,
+      "lot": "",
+      "expiry_date": null,
+      "unit_value": "0.0000",
+      "uom_type_id": 1
+    }
+  ]
+}
 ```
 
 ### Success response
-
 
 ```json
 {
