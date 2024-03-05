@@ -36,6 +36,7 @@ POST
 | reference2                     | string  |          |         |                  |
 | note                           | string  |          |         |                  |
 | custom_reference_no            | string  |          |         |                  |
+| packing_slip_note              | string  |          |         |                  |
 | order_items                    | array   | Y        |         |                  |
 | order_items.*                  | array   | Y        |         |                  |
 | order_items.*.quantity_ordered | integer | Y        |         |                  |
