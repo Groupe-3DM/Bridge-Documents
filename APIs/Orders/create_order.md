@@ -40,7 +40,7 @@ POST
 | order_items                    | array   | Y        |         |                                    |
 | order_items.*                  | array   | Y        |         |                                    |
 | order_items.*.quantity_ordered | integer | Y        |         |                                    |
-| order_items.*.uom_quantity_id  | integer | Y        |         |                                    |
+| order_items.*.uom_quantity_id  | integer | Y        |         | [APIs](../Others/get_uom_types.md) |
 | order_items.*.item_id          | integer | Y        |         | [APIs](../Products/get_items.md)   |
 | order_items.*.lot              | integer |          |         |                                    |
 | order_items.*.expiry_date      | date    |          |         |                                    |
