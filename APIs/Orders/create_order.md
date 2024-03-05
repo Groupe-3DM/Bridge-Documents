@@ -14,37 +14,37 @@ POST
 
 ### Parameters
 
-| Name                           | Type    | Required | Default | Description                   |
-|--------------------------------|---------|----------|---------|-------------------------------|
-| client_id                      | integer | Y        |         | api/v1/clients                |
-| order_number                   | string  |          |         |                               |
-| order_date                     | string  | Y        |         |                               |
-| first_name                     | string  | Y        |         |                               |
-| last_name                      | string  |          |         |                               |
-| apt_num1                       | string  |          |         |                               |
-| apt_num2                       | string  |          |         |                               |
-| address1                       | string  | Y        |         |                               |
-| address2                       | string  |          |         |                               |
-| city                           | string  | Y        |         |                               |
-| province_id                    | integer | Y        |         | api/v1/provinces              |
-| country_id                     | integer | Y        |         | [APIs](./Others/countries.md) |
-| company                        | string  |          |         |                               |
-| telephone                      | string  |          |         |                               |
-| email                          | string  |          |         |                               |
-| postal_code                    | string  | Y        |         |                               |
-| reference1                     | string  |          |         |                               |
-| reference2                     | string  |          |         |                               |
-| note                           | string  |          |         |                               |
-| custom_reference_no            | string  |          |         |                               |
-| packing_slip_note              | string  |          |         |                               |
-| order_items                    | array   | Y        |         |                               |
-| order_items.*                  | array   | Y        |         |                               |
-| order_items.*.quantity_ordered | integer | Y        |         |                               |
-| order_items.*.uom_quantity_id  | integer | Y        |         |                               |
-| order_items.*.item_id          | integer | Y        |         | api/v1/items                  |
-| order_items.*.lot              | integer |          |         |                               |
-| order_items.*.expiry_date      | date    |          |         |                               |
-| order_items.*.unit_value       | integer |          |         |                               |
+| Name                           | Type    | Required | Default | Description                        |
+|--------------------------------|---------|----------|---------|------------------------------------|
+| client_id                      | integer | Y        |         | [APIs](../Clients/get_clients.md)  |
+| order_number                   | string  |          |         |                                    |
+| order_date                     | string  | Y        |         |                                    |
+| first_name                     | string  | Y        |         |                                    |
+| last_name                      | string  |          |         |                                    |
+| apt_num1                       | string  |          |         |                                    |
+| apt_num2                       | string  |          |         |                                    |
+| address1                       | string  | Y        |         |                                    |
+| address2                       | string  |          |         |                                    |
+| city                           | string  | Y        |         |                                    |
+| province_id                    | integer | Y        |         | [APIs](../Others/get_provinces.md) |
+| country_id                     | integer | Y        |         | [APIs](../Others/get_countries.md) |
+| company                        | string  |          |         |                                    |
+| telephone                      | string  |          |         |                                    |
+| email                          | email   |          |         |                                    |
+| postal_code                    | string  | Y        |         |                                    |
+| reference1                     | string  |          |         |                                    |
+| reference2                     | string  |          |         |                                    |
+| note                           | string  |          |         |                                    |
+| custom_reference_no            | string  |          |         |                                    |
+| packing_slip_note              | string  |          |         |                                    |
+| order_items                    | array   | Y        |         |                                    |
+| order_items.*                  | array   | Y        |         |                                    |
+| order_items.*.quantity_ordered | integer | Y        |         |                                    |
+| order_items.*.uom_quantity_id  | integer | Y        |         |                                    |
+| order_items.*.item_id          | integer | Y        |         | [APIs](../Products/get_items.md)   |
+| order_items.*.lot              | integer |          |         |                                    |
+| order_items.*.expiry_date      | date    |          |         |                                    |
+| order_items.*.unit_value       | integer |          |         |                                    |
 
 
 ### Note
