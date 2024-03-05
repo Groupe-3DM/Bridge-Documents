@@ -81,7 +81,38 @@ Authorization: Bearer ******************
 ### Request example
 
 ```json
-
+{
+    "client_id": 1,
+    "order_number": 1689625979,
+    "order_date": "2023-09-09 11:11:11",
+    "email": "test@email.com",
+    "first_name": "john",
+    "last_name": "Don",
+    "address1": "222 ave mntril",
+    "address2": "",
+    "province_id": 612,
+    "country_id": 38,
+    "city": "Montreal",
+    "telephone": null,
+    "company": null,
+    "postal_code": "H9R 3S4",
+    "note": null,
+    "custom_reference_no": null,
+    "client_po": null,
+    "reference1": null,
+    "reference2": null,
+    "order_items": [
+      {
+        "item_id": 1,
+        "quantity_ordered": 1,
+        "lot": "",
+        "expiry_date": null,
+        "unit_value": "0.0000",
+        "uom_type_id": 1,
+        "sale_price": "3.00"
+      }
+    ]
+  }
 ```
 
 ### Success response
