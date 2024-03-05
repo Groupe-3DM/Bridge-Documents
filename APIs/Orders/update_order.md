@@ -23,8 +23,8 @@ PUT
 | last_name                      | string  |                                    |         |             |
 | apt_num1                       | string  |                                    |         |             |
 | apt_num2                       | string  |                                    |         |             |
-| address1                       | string  |                                    |         |             |
-| address2                       | string  |                                    |         |             |
+| address1                       | string  |                                    |         |max 35 characters|
+| address2                       | string  |                                    |         |max 35 characters|
 | city                           | string  |                                    |         |             |
 | province_id                    | string  |                                    |         |             |
 | country_id                     | string  |                                    |         |             |
