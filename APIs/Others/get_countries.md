@@ -41,261 +41,258 @@ Accept: application/json
 Authorization: Bearer ******************
 
 ```
-|country_id|iso2|
-|----------|----|
-|1         |AF  |
-|2         |AL  |
-|3         |DZ  |
-|4         |AS  |
-|5         |AD  |
-|6         |AO  |
-|7         |AI  |
-|8         |AQ  |
-|9         |AG  |
-|10        |AR  |
-|11        |AM  |
-|12        |AW  |
-|13        |AU  |
-|14        |AT  |
-|15        |AZ  |
-|16        |BS  |
-|17        |BH  |
-|18        |BD  |
-|19        |BB  |
-|20        |BY  |
-|21        |BE  |
-|22        |BZ  |
-|23        |BJ  |
-|24        |BM  |
-|25        |BT  |
-|26        |BO  |
-|27        |BA  |
-|28        |BW  |
-|29        |BV  |
-|30        |BR  |
-|31        |IO  |
-|32        |BN  |
-|33        |BG  |
-|34        |BF  |
-|35        |BI  |
-|36        |KH  |
-|37        |CM  |
-|38        |CA  |
-|39        |CV  |
-|40        |KY  |
-|41        |CF  |
-|42        |TD  |
-|43        |CL  |
-|44        |CN  |
-|45        |CX  |
-|46        |CC  |
-|47        |CO  |
-|48        |KM  |
-|49        |CG  |
-|50        |CK  |
-|51        |CR  |
-|52        |CI  |
-|53        |HR  |
-|54        |CU  |
-|55        |CY  |
-|56        |CZ  |
-|57        |DK  |
-|58        |DJ  |
-|59        |DM  |
-|60        |DO  |
-|61        |TL  |
-|62        |EC  |
-|63        |EG  |
-|64        |SV  |
-|65        |GQ  |
-|66        |ER  |
-|67        |EE  |
-|68        |ET  |
-|69        |FK  |
-|70        |FO  |
-|71        |FJ  |
-|72        |FI  |
-|74        |FR  |
-|75        |GF  |
-|76        |PF  |
-|77        |TF  |
-|78        |GA  |
-|79        |GM  |
-|80        |GE  |
-|81        |DE  |
-|82        |GH  |
-|83        |GI  |
-|84        |GR  |
-|85        |GL  |
-|86        |GD  |
-|87        |GP  |
-|88        |GU  |
-|89        |GT  |
-|90        |GN  |
-|91        |GW  |
-|92        |GY  |
-|93        |HT  |
-|94        |HM  |
-|95        |HN  |
-|96        |HK  |
-|97        |HU  |
-|98        |IS  |
-|99        |IN  |
-|100       |ID  |
-|101       |IR  |
-|102       |IQ  |
-|103       |IE  |
-|104       |IL  |
-|105       |IT  |
-|106       |JM  |
-|107       |JP  |
-|108       |JO  |
-|109       |KZ  |
-|110       |KE  |
-|111       |KI  |
-|112       |KP  |
-|113       |KR  |
-|114       |KW  |
-|115       |KG  |
-|116       |LA  |
-|117       |LV  |
-|118       |LB  |
-|119       |LS  |
-|120       |LR  |
-|121       |LY  |
-|122       |LI  |
-|123       |LT  |
-|124       |LU  |
-|125       |MO  |
-|126       |MK  |
-|127       |MG  |
-|128       |MW  |
-|129       |MY  |
-|130       |MV  |
-|131       |ML  |
-|132       |MT  |
-|133       |MH  |
-|134       |MQ  |
-|135       |MR  |
-|136       |MU  |
-|137       |YT  |
-|138       |MX  |
-|139       |FM  |
-|140       |MD  |
-|141       |MC  |
-|142       |MN  |
-|143       |MS  |
-|144       |MA  |
-|145       |MZ  |
-|146       |MM  |
-|147       |NA  |
-|148       |NR  |
-|149       |NP  |
-|150       |NL  |
-|151       |AN  |
-|152       |NC  |
-|153       |NZ  |
-|154       |NI  |
-|155       |NE  |
-|156       |NG  |
-|157       |NU  |
-|158       |NF  |
-|159       |MP  |
-|160       |NO  |
-|161       |OM  |
-|162       |PK  |
-|163       |PW  |
-|164       |PA  |
-|165       |PG  |
-|166       |PY  |
-|167       |PE  |
-|168       |PH  |
-|169       |PN  |
-|170       |PL  |
-|171       |PT  |
-|172       |PR  |
-|173       |QA  |
-|174       |RE  |
-|175       |RO  |
-|176       |RU  |
-|177       |RW  |
-|178       |KN  |
-|179       |LC  |
-|180       |VC  |
-|181       |WS  |
-|182       |SM  |
-|183       |ST  |
-|184       |SA  |
-|185       |SN  |
-|186       |SC  |
-|187       |SL  |
-|188       |SG  |
-|189       |SK  |
-|190       |SI  |
-|191       |SB  |
-|192       |SO  |
-|193       |ZA  |
-|194       |GS  |
-|195       |ES  |
-|196       |LK  |
-|197       |SH  |
-|198       |PM  |
-|199       |SD  |
-|200       |SR  |
-|201       |SJ  |
-|202       |SZ  |
-|203       |SE  |
-|204       |CH  |
-|205       |SY  |
-|206       |TW  |
-|207       |TJ  |
-|208       |TZ  |
-|209       |TH  |
-|210       |TG  |
-|211       |TK  |
-|212       |TO  |
-|213       |TT  |
-|214       |TN  |
-|215       |TR  |
-|216       |TM  |
-|217       |TC  |
-|218       |TV  |
-|219       |UG  |
-|220       |UA  |
-|221       |AE  |
-|222       |GB  |
-|223       |US  |
-|224       |UM  |
-|225       |UY  |
-|226       |UZ  |
-|227       |VU  |
-|228       |VA  |
-|229       |VE  |
-|230       |VN  |
-|231       |VG  |
-|232       |VI  |
-|233       |WF  |
-|234       |EH  |
-|235       |YE  |
-|237       |CD  |
-|238       |ZM  |
-|239       |ZW  |
-|242       |ME  |
-|243       |RS  |
-|244       |AX  |
-|245       |BQ  |
-|246       |CW  |
-|247       |PS  |
-|248       |SS  |
-|249       |BL  |
-|250       |MF  |
-|251       |IC  |
-|252       |AC  |
-|253       |XK  |
-|254       |IM  |
-|255       |TA  |
-|256       |GG  |
-|257       |JE  |
-
-
-
+|country_id|iso2|name                                      |
+|----------|----|------------------------------------------|
+|1         |AF  |Afghanistan                               |
+|2         |AL  |Albania                                   |
+|3         |DZ  |Algeria                                   |
+|4         |AS  |American Samoa                            |
+|5         |AD  |Andorra                                   |
+|6         |AO  |Angola                                    |
+|7         |AI  |Anguilla                                  |
+|8         |AQ  |Antarctica                                |
+|9         |AG  |Antigua and Barbuda                       |
+|10        |AR  |Argentina                                 |
+|11        |AM  |Armenia                                   |
+|12        |AW  |Aruba                                     |
+|13        |AU  |Australia                                 |
+|14        |AT  |Austria                                   |
+|15        |AZ  |AzerbaijanEn                              |
+|16        |BS  |Bahamas                                   |
+|17        |BH  |Bahrain                                   |
+|18        |BD  |Bangladesh                                |
+|19        |BB  |Barbados                                  |
+|20        |BY  |Belarus                                   |
+|21        |BE  |Belgium                                   |
+|22        |BZ  |Belize                                    |
+|23        |BJ  |Benin                                     |
+|24        |BM  |Bermuda                                   |
+|25        |BT  |Bhutan                                    |
+|26        |BO  |Bolivia                                   |
+|27        |BA  |Bosnia and Herzegovina                    |
+|28        |BW  |Botswana                                  |
+|29        |BV  |Bouvet Island                             |
+|30        |BR  |Brazil                                    |
+|31        |IO  |British Indian Ocean Territory            |
+|32        |BN  |Brunei Darussalam                         |
+|33        |BG  |Bulgaria                                  |
+|34        |BF  |Burkina Faso                              |
+|35        |BI  |Burundi                                   |
+|36        |KH  |Cambodia                                  |
+|37        |CM  |Cameroon                                  |
+|38        |CA  |Canada                                    |
+|39        |CV  |Cape Verde                                |
+|40        |KY  |Cayman Islands                            |
+|41        |CF  |Central African Republic                  |
+|42        |TD  |Chad                                      |
+|43        |CL  |Chile                                     |
+|44        |CN  |China                                     |
+|45        |CX  |Christmas Island                          |
+|46        |CC  |Cocos (Keeling) Islands                   |
+|47        |CO  |Colombia                                  |
+|48        |KM  |Comoros                                   |
+|49        |CG  |Congo                                     |
+|50        |CK  |Cook Islands                              |
+|51        |CR  |Costa Rica                                |
+|52        |CI  |Cote D'Ivoire                             |
+|53        |HR  |Croatia                                   |
+|54        |CU  |Cuba                                      |
+|55        |CY  |Cyprus                                    |
+|56        |CZ  |Czech Republic                            |
+|57        |DK  |Denmark                                   |
+|58        |DJ  |Djibouti                                  |
+|59        |DM  |Dominica                                  |
+|60        |DO  |Dominican Republic                        |
+|61        |TL  |East Timor                                |
+|62        |EC  |Ecuador                                   |
+|63        |EG  |Egypt                                     |
+|64        |SV  |El Salvador                               |
+|65        |GQ  |Equatorial Guinea                         |
+|66        |ER  |Eritrea                                   |
+|67        |EE  |Estonia                                   |
+|68        |ET  |Ethiopia                                  |
+|69        |FK  |Falkland Islands (Malvinas)               |
+|70        |FO  |Faroe Islands                             |
+|71        |FJ  |Fiji                                      |
+|72        |FI  |Finland                                   |
+|74        |FR  |France, Metropolitan                      |
+|75        |GF  |French Guiana                             |
+|76        |PF  |French Polynesia                          |
+|77        |TF  |French Southern Territories               |
+|78        |GA  |Gabon                                     |
+|79        |GM  |Gambia                                    |
+|80        |GE  |Georgia                                   |
+|81        |DE  |Germany                                   |
+|82        |GH  |Ghana                                     |
+|83        |GI  |Gibraltar                                 |
+|84        |GR  |Greece                                    |
+|85        |GL  |Greenland                                 |
+|86        |GD  |Grenada                                   |
+|87        |GP  |Guadeloupe                                |
+|88        |GU  |Guam                                      |
+|89        |GT  |Guatemala                                 |
+|90        |GN  |Guinea                                    |
+|91        |GW  |Guinea-Bissau                             |
+|92        |GY  |Guyana                                    |
+|93        |HT  |Haiti                                     |
+|94        |HM  |Heard and Mc Donald Islands               |
+|95        |HN  |Honduras                                  |
+|96        |HK  |Hong Kong                                 |
+|97        |HU  |Hungary                                   |
+|98        |IS  |Iceland                                   |
+|99        |IN  |India                                     |
+|100       |ID  |Indonesia                                 |
+|101       |IR  |Iran (Islamic Republic of)                |
+|102       |IQ  |Iraq                                      |
+|103       |IE  |Ireland                                   |
+|104       |IL  |Israel                                    |
+|105       |IT  |Italy                                     |
+|106       |JM  |Jamaica                                   |
+|107       |JP  |Japan                                     |
+|108       |JO  |Jordan                                    |
+|109       |KZ  |Kazakhstan                                |
+|110       |KE  |Kenya                                     |
+|111       |KI  |Kiribati                                  |
+|112       |KP  |North Korea                               |
+|113       |KR  |South Korea                               |
+|114       |KW  |Kuwait                                    |
+|115       |KG  |Kyrgyzstan                                |
+|116       |LA  |Lao People's Democratic Republic          |
+|117       |LV  |Latvia                                    |
+|118       |LB  |Lebanon                                   |
+|119       |LS  |Lesotho                                   |
+|120       |LR  |Liberia                                   |
+|121       |LY  |Libyan Arab Jamahiriya                    |
+|122       |LI  |Liechtenstein                             |
+|123       |LT  |Lithuania                                 |
+|124       |LU  |Luxembourg                                |
+|125       |MO  |Macau                                     |
+|126       |MK  |FYROM                                     |
+|127       |MG  |Madagascar                                |
+|128       |MW  |Malawi                                    |
+|129       |MY  |Malaysia                                  |
+|130       |MV  |Maldives                                  |
+|131       |ML  |Mali                                      |
+|132       |MT  |Malta                                     |
+|133       |MH  |Marshall Islands                          |
+|134       |MQ  |Martinique                                |
+|135       |MR  |Mauritania                                |
+|136       |MU  |Mauritius                                 |
+|137       |YT  |Mayotte                                   |
+|138       |MX  |Mexico                                    |
+|139       |FM  |Micronesia, Federated States of           |
+|140       |MD  |Moldova, Republic of                      |
+|141       |MC  |Monaco                                    |
+|142       |MN  |Mongolia                                  |
+|143       |MS  |Montserrat                                |
+|144       |MA  |Morocco                                   |
+|145       |MZ  |Mozambique                                |
+|146       |MM  |Myanmar                                   |
+|147       |NA  |Namibia                                   |
+|148       |NR  |Nauru                                     |
+|149       |NP  |Nepal                                     |
+|150       |NL  |Netherlands                               |
+|151       |AN  |Netherlands Antilles                      |
+|152       |NC  |New Caledonia                             |
+|153       |NZ  |New Zealand                               |
+|154       |NI  |Nicaragua                                 |
+|155       |NE  |Niger                                     |
+|156       |NG  |Nigeria                                   |
+|157       |NU  |Niue                                      |
+|158       |NF  |Norfolk Island                            |
+|159       |MP  |Northern Mariana Islands                  |
+|160       |NO  |Norway                                    |
+|161       |OM  |Oman                                      |
+|162       |PK  |Pakistan                                  |
+|163       |PW  |Palau                                     |
+|164       |PA  |Panama                                    |
+|165       |PG  |Papua New Guinea                          |
+|166       |PY  |Paraguay                                  |
+|167       |PE  |Peru                                      |
+|168       |PH  |Philippines                               |
+|169       |PN  |Pitcairn                                  |
+|170       |PL  |Poland                                    |
+|171       |PT  |Portugal                                  |
+|172       |PR  |Puerto Rico                               |
+|173       |QA  |Qatar                                     |
+|174       |RE  |Reunion                                   |
+|175       |RO  |Romania                                   |
+|176       |RU  |Russian Federation                        |
+|177       |RW  |Rwanda                                    |
+|178       |KN  |Saint Kitts and Nevis                     |
+|179       |LC  |Saint Lucia                               |
+|180       |VC  |Saint Vincent and the Grenadines          |
+|181       |WS  |Samoa                                     |
+|182       |SM  |San Marino                                |
+|183       |ST  |Sao Tome and Principe                     |
+|184       |SA  |Saudi Arabia                              |
+|185       |SN  |Senegal                                   |
+|186       |SC  |Seychelles                                |
+|187       |SL  |Sierra Leone                              |
+|188       |SG  |Singapore                                 |
+|189       |SK  |Slovak Republic                           |
+|190       |SI  |Slovenia                                  |
+|191       |SB  |Solomon Islands                           |
+|192       |SO  |Somalia                                   |
+|193       |ZA  |South Africa                              |
+|194       |GS  |South Georgia &amp; South Sandwich Islands|
+|195       |ES  |Spain                                     |
+|196       |LK  |Sri Lanka                                 |
+|197       |SH  |St. Helena                                |
+|198       |PM  |St. Pierre and Miquelon                   |
+|199       |SD  |Sudan                                     |
+|200       |SR  |Suriname                                  |
+|201       |SJ  |Svalbard and Jan Mayen Islands            |
+|202       |SZ  |Swaziland                                 |
+|203       |SE  |Sweden                                    |
+|204       |CH  |Switzerland                               |
+|205       |SY  |Syrian Arab Republic                      |
+|206       |TW  |Taiwan                                    |
+|207       |TJ  |Tajikistan                                |
+|208       |TZ  |Tanzania, United Republic of              |
+|209       |TH  |Thailand                                  |
+|210       |TG  |Togo                                      |
+|211       |TK  |Tokelau                                   |
+|212       |TO  |Tonga                                     |
+|213       |TT  |Trinidad and Tobago                       |
+|214       |TN  |Tunisia                                   |
+|215       |TR  |Turkey                                    |
+|216       |TM  |Turkmenistan                              |
+|217       |TC  |Turks and Caicos Islands                  |
+|218       |TV  |Tuvalu                                    |
+|219       |UG  |Uganda                                    |
+|220       |UA  |Ukraine                                   |
+|221       |AE  |United Arab Emirates                      |
+|222       |GB  |United Kingdom                            |
+|223       |US  |United States                             |
+|224       |UM  |United States Minor Outlying Islands      |
+|225       |UY  |Uruguay                                   |
+|226       |UZ  |Uzbekistan                                |
+|227       |VU  |Vanuatu                                   |
+|228       |VA  |Vatican City State (Holy See)             |
+|229       |VE  |Venezuela                                 |
+|230       |VN  |Viet Nam                                  |
+|231       |VG  |Virgin Islands (British)                  |
+|232       |VI  |Virgin Islands (U.S.)                     |
+|233       |WF  |Wallis and Futuna Islands                 |
+|234       |EH  |Western Sahara                            |
+|235       |YE  |Yemen                                     |
+|237       |CD  |Democratic Republic of Congo              |
+|238       |ZM  |Zambia                                    |
+|239       |ZW  |Zimbabwe                                  |
+|242       |ME  |Montenegro                                |
+|243       |RS  |Serbia                                    |
+|244       |AX  |Aaland Islands                            |
+|245       |BQ  |Bonaire, Sint Eustatius and Saba          |
+|246       |CW  |Curacao                                   |
+|247       |PS  |Palestinian Territory, Occupied           |
+|248       |SS  |South Sudan                               |
+|249       |BL  |St. Barthelemy                            |
+|250       |MF  |St. Martin (French part)                  |
+|251       |IC  |Canary Islands                            |
+|252       |AC  |Ascension Island (British)                |
+|253       |XK  |Kosovo, Republic of                       |
+|254       |IM  |Isle of Man                               |
+|255       |TA  |Tristan da Cunha                          |
+|256       |GG  |Guernsey                                  |
+|257       |JE  |Jersey                                    |
