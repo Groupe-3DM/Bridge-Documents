@@ -83,7 +83,7 @@ Authorization: Bearer ******************
 ```json
 {
     "client_id": 1,
-    "order_number": 1689625979,
+    "order_number": "1689625979",
     "order_date": "2023-09-09 11:11:11",
     "email": "test@email.com",
     "first_name": "john",
