@@ -14,38 +14,38 @@ POST
 
 ### Parameters
 
-| Name                           | Type         | Required                 | Default | Description                        |
-|--------------------------------|--------------|--------------------------|---------|------------------------------------|
-| client_id                      | id           | Y                        |         |                                    |
-| order_number                   | string       |                          |         |                                    |
-| order_date                     | string       | Y                        |         |                                    |
-| first_name                     | string       | Y                        |         |                                    |
-| last_name                      | string       |                          |         |                                    |
-| apt_num1                       | string       |                          |         |                                    |
-| apt_num2                       | string       |                          |         |                                    |
-| address1                       | string       | Y                        |         | max 35 characters                  |
-| address2                       | string       |                          |         | max 35 characters                  |
-| city                           | string       | Y                        |         |                                    |
-| province_id                    | id/code/name | Y                        |         | [APIs](../Others/get_provinces.md) |
-| country_id                     | id/iso2      | Y                        |         | [APIs](../Others/get_countries.md) |
-| company                        | string       |                          |         |                                    |
-| telephone                      | string       |                          |         |                                    |
-| email                          | email        |                          |         |                                    |
-| postal_code                    | string       | Y                        |         |                                    |
-| reference1                     | string       |                          |         |                                    |
-| reference2                     | string       |                          |         |                                    |
-| note                           | string       |                          |         |                                    |
-| custom_reference_no            | string       |                          |         |                                    |
-| packing_slip_note              | string       |                          |         |                                    |
-| order_items                    | array        | Y                        |         |                                    |
-| order_items.*                  | array        | Y                        |         |                                    |
-| order_items.*.quantity_ordered | integer      | Y                        |         |                                    |
-| order_items.*.uom_quantity_id  | id           | Y                        |         | [APIs](../Others/get_uom_types.md) |
-| order_items.*.item_id          | id           |                          |         | [APIs](../Products/get_items.md)   |
-| order_items.*.sku              | string       | Y if item_id not present |         |                                    |
-| order_items.*.lot              | string       |                          |         |                                    |
-| order_items.*.expiry_date      | date         |                          |         |                                    |
-| order_items.*.unit_value       | integer      |                          |         |                                    |
+| Name                           | Type    | Required                 | Default | Description                        |
+|--------------------------------|---------|--------------------------|---------|------------------------------------|
+| client_id                      | id      | Y                        |         |                                    |
+| order_number                   | string  |                          |         |                                    |
+| order_date                     | string  | Y                        |         |                                    |
+| first_name                     | string  | Y                        |         |                                    |
+| last_name                      | string  |                          |         |                                    |
+| apt_num1                       | string  |                          |         |                                    |
+| apt_num2                       | string  |                          |         |                                    |
+| address1                       | string  | Y                        |         | max 35 characters                  |
+| address2                       | string  |                          |         | max 35 characters                  |
+| city                           | string  | Y                        |         |                                    |
+| province_id                    | id/code | Y                        |         | [APIs](../Others/get_provinces.md) |
+| country_id                     | id/iso2 | Y                        |         | [APIs](../Others/get_countries.md) |
+| company                        | string  |                          |         |                                    |
+| telephone                      | string  |                          |         |                                    |
+| email                          | email   |                          |         |                                    |
+| postal_code                    | string  | Y                        |         |                                    |
+| reference1                     | string  |                          |         |                                    |
+| reference2                     | string  |                          |         |                                    |
+| note                           | string  |                          |         |                                    |
+| custom_reference_no            | string  |                          |         |                                    |
+| packing_slip_note              | string  |                          |         |                                    |
+| order_items                    | array   | Y                        |         |                                    |
+| order_items.*                  | array   | Y                        |         |                                    |
+| order_items.*.quantity_ordered | integer | Y                        |         |                                    |
+| order_items.*.uom_type_id      | id      | Y                        |         | [APIs](../Others/get_uom_types.md) |
+| order_items.*.item_id          | id      |                          |         | [APIs](../Products/get_items.md)   |
+| order_items.*.sku              | string  | Y if item_id not present |         |                                    |
+| order_items.*.lot              | string  |                          |         |                                    |
+| order_items.*.expiry_date      | date    |                          |         |                                    |
+| order_items.*.unit_value       | integer |                          |         |                                    |
 
 ### Note
 
