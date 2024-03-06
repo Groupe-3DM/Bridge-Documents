@@ -25,8 +25,8 @@ PUT
 | address1                       | string  |                                    |         | max 35 characters                  |
 | address2                       | string  |                                    |         | max 35 characters                  |
 | city                           | string  |                                    |         |                                    |
-| province_id                    | integer |                                    |         | [APIs](../Others/get_provinces.md) |
-| country_id                     | integer |                                    |         | [APIs](../Others/get_countries.md) |
+| province_id                    | id/code |                                    |         | [APIs](../Others/get_provinces.md) |
+| country_id                     | id/iso2 |                                    |         | [APIs](../Others/get_countries.md) |
 | company                        | string  |                                    |         |                                    |
 | telephone                      | string  |                                    |         |                                    |
 | email                          | email   |                                    |         |                                    |
@@ -39,7 +39,7 @@ PUT
 | order_items                    | array   |                                    |         |                                    |
 | order_items.*                  | array   | Y if order_items exists in payload |         |                                    |
 | order_items.*.quantity_ordered | integer | Y if order_items exists in payload |         |                                    |
-| order_items.*.uom_quantity_id  | integer | Y if order_items exists in payload |         | [APIs](../Others/get_uom_types.md) |
+| order_items.*.uom_type_id      | integer | Y if order_items exists in payload |         | [APIs](../Others/get_uom_types.md) |
 | order_items.*.lot              | string  |                                    |         |                                    |
 | order_items.*.expiry_date      | date    |                                    |         |                                    |
 | order_items.*.unit_value       | integer |                                    |         |                                    |
