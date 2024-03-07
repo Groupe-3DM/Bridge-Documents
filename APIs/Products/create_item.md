@@ -58,7 +58,7 @@ POST
 | measurements                        | array   | Y                      |         |                                         |
 | measurements.*                      | array   | Y                      |         |                                         |
 | measurements.*.quantity             | integer | Y                      |         |                                         |
-| measurements.*.uom_type_id          | integer | Y                      |         |                                         |
+| measurements.*.uom_type_id          | integer | Y                      |         | [APIs](../Others/get_uom_types.md)      |
 | measurements.*.length               | decimal | Y                      |         |                                         |
 | measurements.*.weight               | decimal | Y                      |         |                                         |
 | measurements.*.width                | decimal | Y                      |         |                                         |
@@ -98,7 +98,7 @@ POST
 | manufacturers.*.address2            | string  | Y                      |         |                                         |
 | manufacturers.*.description         | string  | Y                      |         |                                         |
 | manufacturers.*.sale_price          | decimal | Y                      |         |                                         |
-| manufacturers.*.international_ship  | boolean | Y                      |         |                                         |
+| manufacturers.*.international_ship  | boolean | Y                      |         |             1 yes, 0 no                             |
 
 ### Note
 
