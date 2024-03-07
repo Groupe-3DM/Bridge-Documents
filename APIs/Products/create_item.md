@@ -20,7 +20,7 @@ POST
 | sku                                 | string  | Y                      |         |                                         |
 | item_type_id                        | id      | Y                      |         | [APIs](../Others/get_item_types.md)     |
 | supply_type_id                      | id      |                        |         | [APIs](../Others/get_supply_types.md)   |
-| order_unit                          | integer | Y                      |         |                                         |
+| order_unit                          | integer | Y                      |         | >0                                      |
 | length_class_id                     | id      | Y                      |         | [APIs](../Others/get_length_classes.md) |
 | weight_class_id                     | id      | Y                      |         | [APIs](../Others/get_weight_classes.md) |
 | barcoded                            | boolean |                        |         | 1 yes, 0 no                             |
@@ -40,11 +40,11 @@ POST
 | season                              | string  |                        |         |                                         |
 | year                                | integer |                        |         |                                         |
 | quarantine_days                     | boolean |                        |         |                                         |
-| pre_alert_days                      | integer |                        |         |                                         |
-| low_level_warning                   | integer |                        |         |                                         |
+| pre_alert_days                      | integer |                        |         | >=0                                     |
+| low_level_warning                   | integer |                        |         | >=0                                     |
 | hazmat                              | boolean |                        |         | 1 yes, 0 no                             |
 | currency_id                         | id      |                        |         | [APIs](../Others/get_currencies.md)     |
-| cost                                | decimal |                        |         |                                         |
+| cost                                | decimal |                        |         | >=0                                     |
 | kit_surcharge                       | boolean |                        |         | 1 yes, 0 no                             |
 | ambient                             | boolean |                        |         | 1 yes, 0 no                             |
 | cold_chain                          | boolean |                        |         | 1 yes, 0 no                             |
@@ -57,12 +57,12 @@ POST
 | air_ground_control                  | boolean |                        |         | 1 yes, 0 no                             |
 | measurements                        | array   | Y                      |         |                                         |
 | measurements.*                      | array   | Y                      |         |                                         |
-| measurements.*.quantity             | integer | Y                      |         |                                         |
+| measurements.*.quantity             | integer | Y                      |         | >0                                      |
 | measurements.*.uom_type_id          | integer | Y                      |         | [APIs](../Others/get_uom_types.md)      |
-| measurements.*.length               | decimal | Y                      |         |                                         |
-| measurements.*.weight               | decimal | Y                      |         |                                         |
-| measurements.*.width                | decimal | Y                      |         |                                         |
-| measurements.*.height               | decimal | Y                      |         |                                         |
+| measurements.*.length               | decimal | Y                      |         | >0                                      |
+| measurements.*.weight               | decimal | Y                      |         | >0                                      |
+| measurements.*.width                | decimal | Y                      |         | >0                                      |
+| measurements.*.height               | decimal | Y                      |         | >0                                      |
 | measurements.*.barcode              | string  | Y                      |         |                                         |
 | measurements.*.description          | string  | Y                      |         |                                         |
 | descriptions                        | array   | Y                      |         | (size=2, en and fr)                     |
@@ -71,7 +71,7 @@ POST
 | descriptions.*.language_id          | id      | Y                      |         | [APIs](../Others/get_languages.md)      |
 | kits                                | array   | Y (if item_type_id: 4) |         |                                         |
 | kits.*                              | array   | Y                      |         |                                         |
-| kits.*.quantity                     | integer | Y                      |         |                                         |
+| kits.*.quantity                     | integer | Y                      |         | >0                                      |
 | kits.*.child_item_id                | id      | Y                      |         |                                         |
 | kits.*.mix_lot                      | boolean | Y                      |         | 1 yes, 0 no                             |
 | kits.*.lot_kit                      | boolean | Y                      |         | 1 yes, 0 no                             |
@@ -81,7 +81,7 @@ POST
 | hazmats.*.un_number                 | string  | Y                      |         |                                         |
 | hazmats.*.class                     | string  | Y                      |         |                                         |
 | hazmats.*.packing_group             | string  | Y                      |         |                                         |
-| hazmats.*.quantity                  | integer | Y                      |         |                                         |
+| hazmats.*.quantity                  | integer | Y                      |         | >0                                      |
 | hazmats.*.description               | string  | Y                      |         |                                         |
 | manufacturers                       | array   |                        |         |                                         |
 | manufacturers.*                     | array   | Y                      |         |                                         |
@@ -97,8 +97,8 @@ POST
 | manufacturers.*.address1            | string  | Y                      |         |                                         |
 | manufacturers.*.address2            | string  | Y                      |         |                                         |
 | manufacturers.*.description         | string  | Y                      |         |                                         |
-| manufacturers.*.sale_price          | decimal | Y                      |         |                                         |
-| manufacturers.*.international_ship  | boolean | Y                      |         |             1 yes, 0 no                             |
+| manufacturers.*.sale_price          | decimal | Y                      |         | >=0                                     |
+| manufacturers.*.international_ship  | boolean | Y                      |         | 1 yes, 0 no                             |
 
 ### Note
 
