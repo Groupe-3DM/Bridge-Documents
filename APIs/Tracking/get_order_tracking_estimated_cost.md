@@ -43,7 +43,10 @@ Authorization: Bearer ******************
 ### Request example
 
 ```json
-
+{
+  "client_id": 1234,
+  "order_number": "567890"
+}
 ```
 
 ### Success response
