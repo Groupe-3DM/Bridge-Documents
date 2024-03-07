@@ -18,7 +18,7 @@ GET
 | Name         | Type   | Required | Default | Description |
 |--------------|--------|----------|---------|-------------|
 | order_number | string | Y        |         |             |
-| client_id    | index  | Y        |         |             |
+| client_id    | id     | Y        |         |             |
 
 ### Note
 
