@@ -12,9 +12,9 @@ GET
 
 ### Parameters
 
-| Name      | Type    | Required | Default | Description |
-|-----------|---------|----------|---------|-------------|
-| client_id | integer | Y        |
+| Name      | Type | Required | Default | Description |
+|-----------|------|----------|---------|-------------|
+| client_id | id   | Y        |
 
 ### Auth required
 ```text
