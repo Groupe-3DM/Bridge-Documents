@@ -31,7 +31,7 @@ Authorization: Bearer ******************
 
 ```
 
-| language_id | name |
+| currency_id | name |
 |-------------|------|
 | 1           | USD  |
 | 2           | CAD  |
