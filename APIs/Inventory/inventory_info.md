@@ -14,25 +14,24 @@ GET
 
 ### Parameters
 
-| Name             | Type    | Required | Default | Description                                                                                |
-|------------------|---------|----------|---------|--------------------------------------------------------------------------------------------|
-| client_id        | integer | Y        |         |                                                                                            |
-| quantity_type_id | integer | Y        |         | 1 available 2 reserved 3 receiving 4 allocated 5 damaged 6 quarantine 7 returned 8 expired |
+| Name             | Type | Required | Default | Description                             |
+|------------------|------|----------|---------|-----------------------------------------|
+| client_id        | id   | Y        |         |                                         |
+| quantity_type_id | id   | Y        |         | [APIs](../Others/get_quantity_types.md) |
 
 ### Auth required
+
 ```text
 Yes
 ```
 
-
 ### Headers
+
 ```text
 Content-Type: application/json
 Accept: application/json
 Authorization: Bearer ******************
 ```
-
-
 
 ### Request example
 
@@ -41,6 +40,7 @@ Authorization: Bearer ******************
 ```
 
 ### Success Response
+
 ```json
 {
   "success": true,

@@ -14,10 +14,10 @@ GET
 
 ### Parameters
 
-| Name      | Type    | Required | Default | Description                          |
-|-----------|---------|----------|---------|--------------------------------------|
-| client_id | integer | Y        |         |
-| sku       | string  | Y        |         | string or strings separated by comma |
+| Name      | Type   | Required | Default | Description                          |
+|-----------|--------|----------|---------|--------------------------------------|
+| client_id | id     | Y        |         |
+| sku       | string | Y        |         | string or strings separated by comma |
 
 ### Auth required
 
