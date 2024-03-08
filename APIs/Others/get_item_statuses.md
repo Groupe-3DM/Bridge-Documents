@@ -34,5 +34,5 @@ Authorization: Bearer ******************
 | item_status_id | name     |
 |----------------|----------|
 | 1              | Active   |
-| 2              | disable  |
+| 2              | Inactive |
 | 3              | Archived |

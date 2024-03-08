@@ -3,7 +3,7 @@
 ### URL
 
 ```text
-api/v1/weight-classes
+api/v1/weights
 ```
 
 ### Method
