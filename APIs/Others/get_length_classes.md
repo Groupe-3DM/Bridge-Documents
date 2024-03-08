@@ -3,7 +3,7 @@
 ### URL
 
 ```text
-api/v1/length-classes
+api/v1/lengths
 ```
 
 ### Method
@@ -33,5 +33,5 @@ Authorization: Bearer ******************
 
 | length_class_id | name |
 |-----------------|------|
-| 1               | cm   |
-| 2               | inch |
+| 1               | m    |
+| 2               | ft   |
