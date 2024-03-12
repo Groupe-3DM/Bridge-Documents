@@ -74,6 +74,8 @@ Accept: application/json
       "notes": "test",
       "order_error": 1,
       "item_error": 1,
+      "employee": 0,
+      "email_verified_at": "2024-01-01 11:11:11",
       "permissions": [
         {
           "id": 1,
