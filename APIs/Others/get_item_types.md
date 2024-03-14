@@ -35,5 +35,3 @@ Authorization: Bearer ******************
 |--------------|--------|
 | 1            | item   |
 | 2            | kit    |
-| 3            | emball |
-| 4            | supply |
