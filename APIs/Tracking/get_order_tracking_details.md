@@ -90,7 +90,8 @@ Authorization: Bearer ******************
           "sku": "NewTestSku1",
           "serial_number": null,
           "lot": null,
-          "expiry_date": null
+          "expiry_date": null,
+          "line_number": xxxx,
         },
         {
           "id": 2,
@@ -103,7 +104,8 @@ Authorization: Bearer ******************
           "sku": "NewTestSku2",
           "serial_number": null,
           "lot": null,
-          "expiry_date": null
+          "expiry_date": null,
+          "line_number": null,
         }
       ]
     }

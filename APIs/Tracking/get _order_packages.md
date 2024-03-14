@@ -16,9 +16,9 @@ GET
 
 | Name         | Type    | Required | Default | Description                                  |
 |--------------|---------|----------|---------|----------------------------------------------|
-| order_number | string  |          |         |                                              |
-| order_id     | integer |          |         |                                              |
-| client_id    | integer |          |         |                                              |
+| order_number | string  |          |         | ex: xxxx1,xxx2,xxx3                          |
+| order_id     | id      |          |         |                                              |
+| client_id    | id      |          |         |                                              |
 | date_field   | string  |          |         | created_at/ship_date/estimated_delivery_date |
 | start_date   | date    |          |         |                                              |
 | end_date     | date    |          |         |                                              |
@@ -101,7 +101,8 @@ Authorization: Bearer ******************
             "sku": "NewTestSku1",
             "serial_number": null,
             "lot": null,
-            "expiry_date": null
+            "expiry_date": null,
+            "line_number": xxx,
           },
           {
             "id": 2,
@@ -114,7 +115,8 @@ Authorization: Bearer ******************
             "sku": "NewTestSku2",
             "serial_number": null,
             "lot": null,
-            "expiry_date": null
+            "expiry_date": null,
+            "line_number": null,
           }
         ]
       },
