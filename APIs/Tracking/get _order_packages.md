@@ -24,7 +24,7 @@ GET
 | end_date     | date    |          |         |                                              |
 | sort_by      | string  |          |         | any of above field                           |
 | sort_order   | string  |          |         | DESC/ASC                                     |
-| limit        | integer |          | 15      | max<200                                      |
+| limit        | integer |          | 15      | max<500                                      |
 | list         | string  |          |         | all/count/take/auto-complete                 |
 
 ### Note
