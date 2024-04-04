@@ -32,10 +32,10 @@ GET
 | arrival_from    | Date          |          |         |                                                              |
 | arrival_to      | Date          |          |         |                                                              |
 | postal_code     | string        |          |         |                                                              |
-| country_id      | integer       |          |         |                                                              |
-| province_id     | integer       |          |         |                                                              |
-| order_status_id | integer/array |          |         |                                                              |
-| status          | boolean       |          |         |                                                              |
+| country_id      | integer       |          |         | [APIs](../Others/get_countries.md)                           |
+| province_id     | integer       |          |         | [APIs](../Others/get_provinces.md)                           |
+| order_status_id | integer/array |          |         | [APIs](../Others/get_order_statuses.md)                      |
+| order_state_id  | boolean       |          |         | [APIs](../Others/get_order_states.md)                        |
 | ready           | boolean       |          |         |                                                              |
 | processing_type | number        |          |         |                                                              |
 | sort_by         | string        |          |         | any of above field                                           |
@@ -82,7 +82,7 @@ Authorization: Bearer ******************
     "client_id": 9999,
     "order_number": "1041",
     "order_date": "2023-03-22 11:47:53",
-    "status": 1,
+    "order_state_id": 1,
     "order_status_id": 17,
     "order_type_id": null,
     "processing_type_id": null,
