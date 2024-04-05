@@ -45,4 +45,4 @@ Authorization: Bearer ******************
 | 14           | Cancelled           |
 | 15           | Receiving           |
 | 16           | Awaiting shipping   |
-| 16           | Error               |
+| 17           | Error               |
