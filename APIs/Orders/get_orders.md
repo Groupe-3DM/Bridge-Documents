@@ -14,34 +14,34 @@ GET
 
 ### Parameters
 
-| Name            | Type          | Required | Default | Description                                                  |
-|-----------------|---------------|----------|---------|--------------------------------------------------------------|
-| order_number    | string        |          |         |                                                              |
-| client_id       | integer/array |          |         |                                                              |
-| sku             | string/array  |          |         |                                                              |
-| first_name      | string        |          |         |                                                              |
-| last_name       | string        |          |         |                                                              |
-| telephone       | string        |          |         |                                                              |
-| email           | string        |          |         |                                                              |
-| company         | string        |          |         |                                                              |
-| date_field      | string        |          |         | shipped_date/order_date/process_date                         |
-| start_date      | Date          |          |         |                                                              |
-| end_date        | Date          |          |         |                                                              |
-| order_from      | date          |          |         |                                                              |
-| order_to        | Date          |          |         |                                                              |
-| arrival_from    | Date          |          |         |                                                              |
-| arrival_to      | Date          |          |         |                                                              |
-| postal_code     | string        |          |         |                                                              |
-| country_id      | integer       |          |         | [APIs](../Others/get_countries.md)                           |
-| province_id     | integer       |          |         | [APIs](../Others/get_provinces.md)                           |
-| order_status_id | integer/array |          |         | [APIs](../Others/get_order_statuses.md)                      |
-| order_state_id  | boolean       |          |         | [APIs](../Others/get_order_states.md)                        |
-| ready           | boolean       |          |         |                                                              |
-| processing_type | number        |          |         |                                                              |
-| sort_by         | string        |          |         | any of above field                                           |
-| sort_order      | string        |          |         | DESC/ASC                                                     |
-| limit           | integer       |          |         | <200                                                         |
-| list            | string        |          |         | all/first/last/count/take/auto-complete (default: paginated) |
+| Name            | Type         | Required | Default | Description                                                  |
+|-----------------|--------------|----------|---------|--------------------------------------------------------------|
+| order_number    | string       |          |         |                                                              |
+| client_id       | id/array     |          |         |                                                              |
+| sku             | string/array |          |         |                                                              |
+| first_name      | string       |          |         |                                                              |
+| last_name       | string       |          |         |                                                              |
+| telephone       | string       |          |         |                                                              |
+| email           | string       |          |         |                                                              |
+| company         | string       |          |         |                                                              |
+| date_field      | string       |          |         | shipped_date/order_date/process_date                         |
+| start_date      | Date         |          |         |                                                              |
+| end_date        | Date         |          |         |                                                              |
+| order_from      | date         |          |         |                                                              |
+| order_to        | Date         |          |         |                                                              |
+| arrival_from    | Date         |          |         |                                                              |
+| arrival_to      | Date         |          |         |                                                              |
+| postal_code     | string       |          |         |                                                              |
+| country_id      | id           |          |         | [APIs](../Others/get_countries.md)                           |
+| province_id     | id           |          |         | [APIs](../Others/get_provinces.md)                           |
+| order_status_id | Id           |          |         | [APIs](../Others/get_order_statuses.md)                      |
+| order_state_id  | Id           |          |         | [APIs](../Others/get_order_states.md)                        |
+| ready           | boolean      |          |         |                                                              |
+| processing_type | number       |          |         |                                                              |
+| sort_by         | string       |          |         | any of above field                                           |
+| sort_order      | string       |          |         | DESC/ASC                                                     |
+| limit           | integer      |          |         | <200                                                         |
+| list            | string       |          |         | all/first/last/count/take/auto-complete (default: paginated) |
 
 ### Note
 

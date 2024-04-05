@@ -14,9 +14,9 @@ POST
 
 ### Parameters
 
-| Name     | Type    | Required | Default | Description                                                                                      |
-|----------|---------|----------|---------|--------------------------------------------------------------------------------------------------|
-| order_id | integer | Y        |         | order with order_status_id: 1 received, 2 released, 12 backorder, 14 receiving, can be cancelled |
+| Name     | Type | Required | Default | Description                                                                                      |
+|----------|------|----------|---------|--------------------------------------------------------------------------------------------------|
+| order_id | id   | Y        |         | order with order_status_id: 1 received, 2 released, 12 backorder, 14 receiving, can be cancelled |
 
 ### Note
 ```text
