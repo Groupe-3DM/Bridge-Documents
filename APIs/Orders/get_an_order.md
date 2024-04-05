@@ -55,7 +55,7 @@ Authorization: Bearer ******************
     "client_id": 9999,
     "order_number": "1112",
     "order_date": "2023-05-31 11:31:38",
-    "status": 0,
+    "order_state_id": 1,
     "order_status_id": 14,
     "order_type_id": null,
     "processing_type_id": null,
