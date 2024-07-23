@@ -14,28 +14,27 @@ POST
 
 ### Parameters
 
-| Name                                     | Type    | Required | Default | Description |
-|------------------------------------------|---------|----------|---------|-------------|
-| client_id                                | integer | Y        |         |             |
-| shipping_method_id                       | string  | Y        |         |             |
-| warehouse_id                             | integer | Y        |         |             |
-| supplier_id                              | integer |          |         |             |
-| date_expected                            | integer | Y        |         |             |
-| po_number                                | integer | Y        |         |             |
-| purchase_order_condition_id              | integer |          |         |             |
-| purchase_order_status_id                 | integer |          |         |             |
-| purchase_order_items                     | array   | Y        |         |             |
-| purchase_order_items.*                   | array   | Y        |         |             |
-| purchase_order_items.*.quantity_expected | integer | Y        |         |             |
-| purchase_order_items.*.uom_quantity_id   | integer | Y        |         |             |
-| purchase_order_items.*.item_id           | integer | Y        |         |             |
-| purchase_order_items.*.lot               | integer |          |         |             |
-| purchase_order_items.*.expiry_date       | date    |          |         |             |
-| purchase_order_items.*.cost              | integer |          |         |             |
-| purchase_order_items.*.lot               | integer |          |         |             |
-| purchase_order_items.*.currency_id       | date    | Y        |         |             |
-| purchase_order_items.*.subclient_id      | integer |          |         |             |
-| purchase_order_items.*.upc               | integer |          |         |             |
+| Name                                     | Type    | Required | Default | Description                                        |
+|------------------------------------------|---------|----------|---------|----------------------------------------------------|
+| client_id                                | id      | Y        |         |         |
+| shipping_method_id                       | id      | Y        |         | [APIs](../Others/get_shipping_methods.md)          |
+| warehouse_id                             | id      | Y        |         | [APIs](../Others/get_warehouses.md)                |
+| supplier_id                              | id      |          |         | [APIs](../Others/get_suppliers.md)                 |
+| date_expected                            | date    | Y        |         |                                                    |
+| po_number                                | string  | Y        |         |                                                    |
+| purchase_order_condition_id              | id      |          |         | [APIs](../Others/get_purchase_order_conditions.md) |
+| purchase_order_status_id                 | id      |          |         | [APIs](../Others/get_purchase_order_statuses.md)   |
+| purchase_order_items                     | array   | Y        |         |                                                    |
+| purchase_order_items.*                   | array   | Y        |         |                                                    |
+| purchase_order_items.*.quantity_expected | integer | Y        |         |                                                    |
+| purchase_order_items.*.uom_type_id       | id      | Y        |         | [APIs](../Others/get_uom_types.md)                 |
+| purchase_order_items.*.item_id           | id      | Y        |         |                                                    |
+| purchase_order_items.*.lot               | string  |          |         |                                                    |
+| purchase_order_items.*.expiry_date       | date    |          |         |                                                    |
+| purchase_order_items.*.cost              | decimal |          |         |                                                    |
+| purchase_order_items.*.currency_id       | id      | Y        |         | [APIs](../Others/get_currencies.md)                |
+| purchase_order_items.*.subclient_id      | id      |          |         |                                                    |
+| purchase_order_items.*.upc               | string  |          |         |                                                    |
 
 ### Note
 
