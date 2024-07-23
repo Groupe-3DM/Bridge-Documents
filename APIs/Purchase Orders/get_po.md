@@ -14,18 +14,18 @@ GET
 
 ### Parameters
 
-| Name                        | Type    | Required | Default | Description                                       |
-|-----------------------------|---------|----------|---------|---------------------------------------------------|
-| client_id                   | integer |          |         |                                                   |
-| supplier_id                 | integer |          |         |                                                   |
-| po_number                   | string  |          |         |                                                   |
-| purchase_order_condition_id | integer |          |         |                                                   |
-| purchase_order_status_id    | integer |          |         |                                                   |
-| warehouse_id                | integer |          |         |                                                   |
-| sort_by                     | string  |          |         | any of above field                                |
-| sort_order                  | string  |          |         | DESC/ASC                                          |
-| limit                       | integer |          | 15      | (<200)                                            |
-| list                        | string  |          |         | all/count/take/auto-complete (default: paginated) |
+| Name                        | Type    | Required | Default | Description                                        |
+|-----------------------------|---------|----------|---------|----------------------------------------------------|
+| client_id                   | id      |          |         |                                                    |
+| supplier_id                 | id      |          |         |                                                    |
+| po_number                   | string  |          |         |                                                    |
+| purchase_order_condition_id | id      |          |         | [APIs](../Others/get_purchase_order_conditions.md) |
+| purchase_order_status_id    | id      |          |         | [APIs](../Others/get_purchase_order_statuses.md)   |
+| warehouse_id                | id      |          |         | [APIs](../Others/get_warehouses.md)                |
+| sort_by                     | string  |          |         | any of above field                                 |
+| sort_order                  | string  |          |         | DESC/ASC                                           |
+| limit                       | integer |          | 15      | (<200)                                             |
+| list                        | string  |          |         | all/count/take/auto-complete (default: paginated)  |
 
 
 
