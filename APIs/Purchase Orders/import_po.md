@@ -14,23 +14,23 @@ POST
 
 ### Parameters
 
-| Name               | Type    | Required | Default | Description       |
-|--------------------|---------|----------|---------|-------------------|
-| client_id          | integer | Y        |         |                   |
-| shipping_method_id | integer | Y        |         |                   |
-| warehouse_id       | integer | Y        |         |                   |
-| supplier_id        | integer |          |         |                   |
-| date_expected      | date    | Y        |         | Y-m-d             |
-| po_number          | string  | Y        |         |                   |
-| sku                | string  | Y        |         |                   |
-| quantity_expected  | integer | Y        |         |                   |
-| uom_quantity_id    | integer | Y        |         |                   |
-| lot                | string  |          |         |                   |
-| expiry_date        | date    |          |         |                   |
-| cost               | decimal |          |         |                   |
-| currency_id        | date    | Y        |         | 1 CAD 2 USD 3 ERO |
-| subclient_id       | integer |          |         |                   |
-| upc                | string  |          |         |                   |
+| Name               | Type    | Required | Default | Description                               |
+|--------------------|---------|----------|---------|-------------------------------------------|
+| client_id          | id      | Y        |         |                                           |
+| shipping_method_id | id      | Y        |         | [APIs](../Others/get_shipping_methods.md) |
+| warehouse_id       | id      | Y        |         | [APIs](../Others/get_warehouses.md)       |
+| supplier_id        | id      |          |         |                                           |
+| date_expected      | date    | Y        |         | Y-m-d                                     |
+| po_number          | string  | Y        |         |                                           |
+| sku                | string  | Y        |         |                                           |
+| quantity_expected  | integer | Y        |         |                                           |
+| uom_type_id        | id      | Y        |         | [APIs](../Others/get_uom_types.md)        |
+| lot                | string  |          |         |                                           |
+| expiry_date        | date    |          |         |                                           |
+| cost               | decimal |          |         |                                           |
+| currency_id        | id      | Y        |         | [APIs](../Others/get_currencies.md)                          |
+| subclient_id       | id      |          |         |                                           |
+| upc                | string  |          |         |                                           |
 
 ### Note
 
