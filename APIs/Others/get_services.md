@@ -31,7 +31,7 @@ Authorization: Bearer ******************
 
 ```
 
-| uom_type_id | name    |
-|-------------|---------|
-| 1           | Regular |
-| 2           | Express |
+| service_id | name    |
+|------------|---------|
+| 1          | Regular |
+| 2          | Express |
