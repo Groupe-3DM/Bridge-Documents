@@ -1,7 +1,7 @@
 # Bridge API Documentation
 ### Base url
 
-`Production : https://brdgeapi.3-dm.com/api/v1`
+`Production : https://bridgeapi.3-dm.com/api/v1`
 
 `QA : https://bridgeqa.3-dm.com/api/v1`
 
