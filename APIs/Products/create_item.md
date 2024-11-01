@@ -90,7 +90,7 @@ POST
 | manufacturer.province_id         | id      | Y                   |         | [APIs](../Others/get_provinces.md)      |
 | manufacturer.name                | string  | Y                   |         |                                         |
 | manufacturer.postal_code         | string  | Y                   |         |                                         |
-| manufacturer.code                | string  | Y                   |         |                                         |
+| manufacturer.code                | string  | Y (xxx.xx.xx.xx)    |         |                                         |
 | manufacturer.mid                 | string  | Y                   |         |                                         |
 | manufacturer.phone               | string  | Y                   |         |                                         |
 | manufacturer.city                | string  | Y                   |         |                                         |
