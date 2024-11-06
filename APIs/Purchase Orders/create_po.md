@@ -27,7 +27,7 @@ POST
 | purchase_order_items.*                   | array   | Y        |         |                                           |
 | purchase_order_items.*.quantity_expected | integer | Y        |         |                                           |
 | purchase_order_items.*.uom_type_id       | id      | Y        |         | [APIs](../Others/get_uom_types.md)        |
-| purchase_order_items.*.item_id           | id      | Y        |         | unique with log&expiry date               |
+| purchase_order_items.*.item_id           | id      | Y        |         | unique with lot & expiry date             |
 | purchase_order_items.*.lot               | string  |          |         |                                           |
 | purchase_order_items.*.expiry_date       | date    |          |         |                                           |
 | purchase_order_items.*.cost              | decimal |          |         |                                           |
