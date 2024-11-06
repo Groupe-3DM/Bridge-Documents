@@ -58,7 +58,28 @@ Authorization: Bearer ******************
 ### Request example
 
 ```json
-
+{
+    "po_number": "1-po-1701357058",
+    "date_expected": "2021-09-01",
+    "client_id": "1",
+    "warehouse_id": 12,
+    "supplier_id": null,
+    "shipping_method_id": "1",
+    "client_po_comment": "this is a test",
+    "purchase_order_items": [
+      {
+        "subclient_id": null,
+        "item_id": 6,
+        "cost": "3.0000",
+        "currency_id": 1,
+        "quantity_expected": 100,
+        "supplier_code": "4",
+        "lot": "",
+        "upc": "2",
+        "uom_type_id": 1
+      }
+    ]
+  }
 ```
 
 ### Success response
@@ -76,6 +97,7 @@ Authorization: Bearer ******************
     "supplier_id": null,
     "shipping_method_id": "1",
     "purchase_order_status_id": 1,
+    "client_po_comment": "this is a test",
     "purchase_order_condition_id": 1,
     "id": 35,
     "warehouse_name": "3DM - AVRO",
