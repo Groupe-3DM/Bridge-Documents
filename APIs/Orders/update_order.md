@@ -42,7 +42,7 @@ PUT
 | order_items.*.uom_type_id      | integer | Y if order_items exists in payload |         | [APIs](../Others/get_uom_types.md) |
 | order_items.*.lot              | string  |                                    |         |                                    |
 | order_items.*.expiry_date      | date    |                                    |         |                                    |
-| order_items.*.unit_value       | integer |                                    |         |                                    |
+| order_items.*.sale_price       | decimal |                                    |         | unit value                         |
 
 ### Note
 

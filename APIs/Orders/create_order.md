@@ -46,7 +46,7 @@ POST
 | order_items.*.lot              | string      |                          |         |                                    |
 | order_items.*.expiry_date      | date        |                          |         |                                    |
 | order_items.*.line_number      | string      |                          |         |                                    |
-| order_items.*.unit_value       | decimal     |                          |         |                                    |
+| order_items.*.sale_price       | decimal     |                          |         | unit value                         |
 
 ### Note
 
