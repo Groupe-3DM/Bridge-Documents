@@ -14,89 +14,89 @@ PUT
 
 ### Parameters
 
-| Name                   | Type    | Required                  | Default | Description                             |
-|------------------------|---------|---------------------------|---------|-----------------------------------------|
-| client_id              | id      |                           |         |                                         |
-| sku                    | string  |                           |         |                                         |
-| item_type_id           | id      |                           |         | [APIs](../Others/get_item_types.md)     |
-| supply_type_id         | id      | Y if item_type_id=4       |         | [APIs](../Others/get_supply_types.md)   |
-| order_unit             | integer |                           |         | >0                                      |
-| length_class_id        | id      |                           |         | [APIs](../Others/get_length_classes.md) |
-| weight_class_id        | id      |                           |         | [APIs](../Others/get_weight_classes.md) |
-| barcoded               | boolean |                           |         | 1 yes, 0 no                             |
-| manufacturer_code      | string  |                           |         |                                         |
-| upc                    | string  |                           |         |                                         |
-| group                  | string  |                           |         |                                         |
-| family                 | string  |                           |         |                                         |
-| color                  | string  |                           |         |                                         |
-| size                   | string  |                           |         |                                         |
-| material               | string  |                           |         |                                         |
-| category               | string  |                           |         |                                         |
-| sub_category           | string  |                           |         |                                         |
-| department             | string  |                           |         |                                         |
-| sub_department         | string  |                           |         |                                         |
-| supplier_code          | string  |                           |         |                                         |
-| item_linguistic_id     | id      |                           |         | [APIs](../Others/get_linguistics.md)    |
-| season                 | string  |                           |         |                                         |
-| year                   | integer |                           |         |                                         |
-| quarantine_days        | boolean |                           |         |                                         |
-| pre_alert_days         | integer |                           |         | >=0                                     |
-| low_level_warning      | integer |                           |         | >=0                                     |
-| hazmat                 | boolean |                           |         | 1 yes, 0 no                             |
-| currency_id            | id      |                           |         | [APIs](../Others/get_currencies.md)     |
-| cost                   | decimal |                           |         | >=0                                     |
-| kit_surcharge          | boolean |                           |         | 1 yes, 0 no                             |
-| ambient                | boolean |                           |         | 1 yes, 0 no                             |
-| cold_chain             | boolean |                           |         | 1 yes, 0 no                             |
-| controlled             | boolean |                           |         | 1 yes, 0 no                             |
-| restricted_access      | boolean |                           |         | 1 yes, 0 no                             |
-| restricted_ecomm       | boolean |                           |         | 1 yes, 0 no                             |
-| restricted_precursor   | boolean |                           |         | 1 yes, 0 no                             |
-| lot_expiry_needed      | boolean |                           |         | 1 yes, 0 no                             |
-| serial_number          | boolean |                           |         | 1 yes, 0 no                             |
-| air_ground_control     | boolean |                           |         | 1 yes, 0 no                             |
-| measurements           | array   |                           |         |                                         |
-| measurements.*         | array   | Y if measurements present |         |                                         |
-| measurements.*.quantity | integer | Y                         |         | >0                                      |
-| measurements.*.uom_type_id | integer | Y                         |         | [APIs](../Others/get_uom_types.md)      |
-| measurements.*.length  | decimal | Y                         |         | >0                                      |
-| measurements.*.weight  | decimal | Y                         |         | >0                                      |
-| measurements.*.width   | decimal | Y                         |         | >0                                      |
-| measurements.*.height  | decimal | Y                         |         | >0                                      |
-| measurements.*.barcode | string  | Y                         |         |                                         |
-| measurements.*.description | string  | Y                         |         |                                         |
-| descriptions           | array   | Y                         |         | (size=2, en and fr)                     |
-| descriptions.*         | array   | Y                         |         |                                         |
-| descriptions.*.description | string  | Y                         |         |                                         |
-| descriptions.*.language_id | id      | Y                         |         | [APIs](../Others/get_languages.md)      |
-| kits                   | array   | Y if item_type_id=2       |         |                                         |
-| kits.*                 | array   | Y                         |         |                                         |
-| kits.*.quantity        | integer | Y                         |         | >0                                      |
-| kits.*.child_item_id   | id      | Y                         |         |                                         |
-| kits.*.mix_lot         | boolean | Y                         |         | 1 yes, 0 no                             |
-| kits.*.lot_kit         | boolean | Y                         |         | 1 yes, 0 no                             |
-| kits.*.populate_order  | boolean | Y                         |         |                                         |
-| hazmats                | array   | Y if hazmat               |         |                                         |
-| hazmats.un_number      | string  | Y                         |         |                                         |
-| hazmats.class          | string  | Y                         |         |                                         |
-| hazmats.packing_group  | string  | Y                         |         |                                         |
-| hazmats.quantity       | integer | Y                         |         | >0                                      |
-| hazmats.description    | string  | Y                         |         |                                         |
-| manufacturer           | array   |                           |         |                                         |
-| manufacturer.country_id | id      | Y                         |         | [APIs](../Others/get_countries.md)      |
-| manufacturer.original_country_id | id      | Y                         |         | [APIs](../Others/get_countries.md)      |
-| manufacturer.province_id | id      | Y                         |         | [APIs](../Others/get_provinces.md)      |
-| manufacturer.name      | string  | Y                         |         |                                         |
-| manufacturer.postal_code | string  | Y                         |         |                                         |
-| manufacturer.code      | string  | Y                         |         |                                         |
-| manufacturer.mid       | string  | Y                         |         |                                         |
-| manufacturer.phone     | string  | Y                         |         |                                         |
-| manufacturer.city      | string  | Y                         |         |                                         |
-| manufacturer.address1  | string  | Y                         |         |                                         |
-| manufacturer.address2  | string  | Y                         |         |                                         |
-| manufacturer.description | string  | Y                         |         |                                         |
-| manufacturer.sale_price | decimal | Y                         |         | >=0                                     |
-| manufacturer.international_ship | boolean | Y                         |         | 1 yes, 0 no                             |
+| Name                             | Type    | Required                  | Default | Description                             |
+|----------------------------------|---------|---------------------------|---------|-----------------------------------------|
+| client_id                        | id      |                           |         |                                         |
+| sku                              | string  |                           |         |                                         |
+| item_type_id                     | id      |                           |         | [APIs](../Others/get_item_types.md)     |
+| supply_type_id                   | id      | Y if item_type_id=4       |         | [APIs](../Others/get_supply_types.md)   |
+| order_unit                       | integer |                           |         | >0                                      |
+| length_class_id                  | id      |                           |         | [APIs](../Others/get_length_classes.md) |
+| weight_class_id                  | id      |                           |         | [APIs](../Others/get_weight_classes.md) |
+| barcoded                         | boolean |                           |         | 1 yes, 0 no                             |
+| manufacturer_code                | string  |                           |         |                                         |
+| upc                              | string  |                           |         |                                         |
+| group                            | string  |                           |         |                                         |
+| family                           | string  |                           |         |                                         |
+| color                            | string  |                           |         |                                         |
+| size                             | string  |                           |         |                                         |
+| material                         | string  |                           |         |                                         |
+| category                         | string  |                           |         |                                         |
+| sub_category                     | string  |                           |         |                                         |
+| department                       | string  |                           |         |                                         |
+| sub_department                   | string  |                           |         |                                         |
+| supplier_code                    | string  |                           |         |                                         |
+| item_linguistic_id               | id      |                           |         | [APIs](../Others/get_linguistics.md)    |
+| season                           | string  |                           |         |                                         |
+| year                             | integer |                           |         |                                         |
+| quarantine_days                  | boolean |                           |         |                                         |
+| pre_alert_days                   | integer |                           |         | >=0                                     |
+| low_level_warning                | integer |                           |         | >=0                                     |
+| hazmat                           | boolean |                           |         | 1 yes, 0 no                             |
+| currency_id                      | id      |                           |         | [APIs](../Others/get_currencies.md)     |
+| cost                             | decimal |                           |         | >=0                                     |
+| kit_surcharge                    | boolean |                           |         | 1 yes, 0 no                             |
+| ambient                          | boolean |                           |         | 1 yes, 0 no                             |
+| cold_chain                       | boolean |                           |         | 1 yes, 0 no                             |
+| controlled                       | boolean |                           |         | 1 yes, 0 no                             |
+| restricted_access                | boolean |                           |         | 1 yes, 0 no                             |
+| restricted_ecomm                 | boolean |                           |         | 1 yes, 0 no                             |
+| restricted_precursor             | boolean |                           |         | 1 yes, 0 no                             |
+| lot_expiry_needed                | boolean |                           |         | 1 yes, 0 no                             |
+| serial_number                    | boolean |                           |         | 1 yes, 0 no                             |
+| air_ground_control               | boolean |                           |         | 1 yes, 0 no                             |
+| measurements                     | array   |                           |         |                                         |
+| measurements.*                   | array   | Y if measurements present |         |                                         |
+| measurements.*.quantity          | integer | Y                         |         | >0                                      |
+| measurements.*.uom_type_id       | integer | Y                         |         | [APIs](../Others/get_uom_types.md)      |
+| measurements.*.length            | decimal | Y                         |         | >0                                      |
+| measurements.*.weight            | decimal | Y                         |         | >0                                      |
+| measurements.*.width             | decimal | Y                         |         | >0                                      |
+| measurements.*.height            | decimal | Y                         |         | >0                                      |
+| measurements.*.barcode           | string  | Y                         |         |                                         |
+| measurements.*.description       | string  | Y                         |         |                                         |
+| descriptions                     | array   | Y                         |         | (size=2, en and fr)                     |
+| descriptions.*                   | array   | Y                         |         |                                         |
+| descriptions.*.description       | string  | Y                         |         |                                         |
+| descriptions.*.language_id       | id      | Y                         |         | [APIs](../Others/get_languages.md)      |
+| kits                             | array   | Y if item_type_id=2       |         |                                         |
+| kits.*                           | array   | Y                         |         |                                         |
+| kits.*.quantity                  | integer | Y                         |         | >0                                      |
+| kits.*.child_item_id             | id      | Y                         |         |                                         |
+| kits.*.mix_lot                   | boolean | Y                         |         | 1 yes, 0 no                             |
+| kits.*.lot_kit                   | boolean | Y                         |         | 1 yes, 0 no                             |
+| kits.*.populate_order            | boolean | Y                         |         |                                         |
+| hazmats                          | array   | Y if hazmat               |         |                                         |
+| hazmats.un_number                | string  | Y                         |         |                                         |
+| hazmats.class                    | string  | Y                         |         |                                         |
+| hazmats.packing_group            | string  | Y                         |         |                                         |
+| hazmats.quantity                 | integer | Y                         |         | >0                                      |
+| hazmats.description              | string  | Y                         |         |                                         |
+| manufacturer                     | array   |                           |         |                                         |
+| manufacturer.country_id          | id      |                           |         | [APIs](../Others/get_countries.md)      |
+| manufacturer.original_country_id | id      |                           |         | [APIs](../Others/get_countries.md)      |
+| manufacturer.province_id         | id      |                           |         | [APIs](../Others/get_provinces.md)      |
+| manufacturer.name                | string  |                           |         |                                         |
+| manufacturer.postal_code         | string  |                           |         |                                         |
+| manufacturer.code                | string  |                           |         |                                         |
+| manufacturer.mid                 | string  |                           |         |                                         |
+| manufacturer.phone               | string  |                           |         |                                         |
+| manufacturer.city                | string  |                           |         |                                         |
+| manufacturer.address1            | string  |                           |         |                                         |
+| manufacturer.address2            | string  |                           |         |                                         |
+| manufacturer.description         | string  |                           |         |                                         |
+| manufacturer.sale_price          | decimal |                           |         | >=0                                     |
+| manufacturer.international_ship  | boolean |                           |         | 1 yes, 0 no                             |
 
 ### Note
 
